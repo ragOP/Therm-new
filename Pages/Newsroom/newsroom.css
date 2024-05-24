@@ -642,7 +642,6 @@
  margin-top: 50px;
  background-color: rgba(166, 25, 46, 1);
  padding: 15px;
- Width: 1180px;
 }
 .leadership-cover-bottom > p {
  font: 25px "Helvetica Neue LT W1G", Helvetica;
@@ -817,7 +816,7 @@
  height: 317px;
  flex-shrink: 0;
  border-radius: 2px;
- background: rgba(244,244,245,255);
+ background: rgb(237 237 238);
  margin-bottom: 10px;
  padding: 20px;
 }
@@ -1002,6 +1001,9 @@ text-align: left;
    .our-story-mob{
     display: none;
    }
+   .socials{
+    display: none;
+   }
   @media only screen and (max-width: 768px) {
    .footer-first{
      width: 100%;
@@ -1012,6 +1014,9 @@ text-align: left;
    }
 
    @media only screen and (max-width: 768px) {
+    .inNews{
+      display: none;
+    }
     .newsroom-about{
      margin-top: 0px;
      padding: 0 0px;
@@ -1028,22 +1033,22 @@ text-align: left;
      margin: 50px 7px;
     }
     .newsroom-about-left-heading{
-     font: 33px "Helvetica Neue LT W1G", Helvetica;
-     font-weight: 400;
-     line-height: 60px;
-     text-align: left;
+      font: 31px "Helvetica Neue LT W1G", Helvetica;
+      font-weight: 400;
+      line-height: 42px;
+      text-align: left;
     }
     .newsroom-about-left-heading > span {
      font-weight: 700;
     }
     .newsroom-top{
-     font: 20px "Helvetica Neue LT W1G", Helvetica;
+     font: 19px "Helvetica Neue LT W1G", Helvetica;
      font-weight: 400;
      line-height: 28px;
      text-align: left;
     }
     .newsroom-right{
-     font: 20px "Helvetica Neue LT W1G", Helvetica;
+     font: 18px "Helvetica Neue LT W1G", Helvetica;
      font-weight: 700;
      line-height: 28px;
      text-align: left;
@@ -1269,6 +1274,7 @@ text-align: left;
    }
    .inNews-single > img {
     margin-top: 10px;
+    width: 100%;
    }
    .inNews-date{
     font: 20px "Helvetica Neue LT W1G", Helvetica;
@@ -1290,7 +1296,8 @@ text-align: left;
     margin-top: 10px;
    }
    .press{
-    height: 609px;
+    
+            height: auto;
     margin-top: 190px;
     padding: 0px;
    }
@@ -1313,11 +1320,11 @@ text-align: left;
         margin-top: 10px;
    }
    .press-single{
-    width: 398px;
+    width: 96vw;
     height: 100%;
    }
    .press-single > img{
-    width: 305%;
+    width: 100%;
    }
    .press-desc{
     font: 20px "Helvetica Neue LT W1G", Helvetica;
@@ -1325,7 +1332,7 @@ text-align: left;
     line-height: 28px;
     text-align: left;
     margin-top: 10px;
-    width: 306%;
+    width: 100%;
    }
    .press-date{
     font: 20px "Helvetica Neue LT W1G", Helvetica;
@@ -1352,6 +1359,7 @@ text-align: left;
     text-transform: uppercase;
     color: red;
     font: 16px "Helvetica Neue LT W1G", Helvetica;
+            display: none;
    }
    .inNews .btn-single > img, .press-btn > img {
     display: none;
@@ -1371,39 +1379,53 @@ text-align: left;
    }
    .newsletter {
     width: 100%;
-    height: 178px;
+    height: 226px;
     padding: 0px;
+    gap: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     background-color: rgba(245, 245, 245, 1);
+    margin-bottom: 0px;
+    margin-top: 5px;
    }
    .newsletter-text{
     margin: 0px 10px;
    }
    .newsletter-text-top{
+    font: 22px "Helvetica Neue LT W1G", Helvetica;
     margin-left: 10px;
+    font-weight: 700;
    }
    .newsletter-tect-mid{
+    font: 18px "Helvetica Neue LT W1G", Helvetica;
     margin-left: 10px;
    }
    .email{
     margin-left: 10px;
+    font: 18px "Helvetica Neue LT W1G", Helvetica;
     text-transform: uppercase;
    }
    .newsletter-text > input {
-    width: 100px;
-    height: 35px;
+    width: 175px;
+        height: 35px;
     border-radius: 2px 0px 0px 0px;
-    background-color: rgba(255, 255, 255, 1);
-    border: none;
-    outline: none;
-    margin-top: 15px;
-    padding: 10px;
+    background-color: rgba(245, 245, 245, 1);;
+  border: none;
+  outline: none;
+  margin-top: -8px;
+  margin-left: 20px;
+  padding: 10px;
 }
+@media only screen and (max-width: 768px) {
+  .newsletter-text > input::placeholder{
+    color: #000;
+    font: 14px "Helvetica Neue LT W1G", Helvetica;
+  }
 .newsletter-img > img {
-  margin-left: 111px;
+  position: absolute;
+            right: 0;
 }
 .our-story-mob{
   display: block;
@@ -1450,7 +1472,7 @@ text-align: left;
  }
  .main-news{
   width: 100%;
-  height: 259px;
+  height: 417px;
   margin-top: 70px;
   position: relative;
  }
@@ -1460,7 +1482,9 @@ text-align: left;
  }
  .main-poistion{
   position: absolute;
-  top: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
  }
  .image-txt{
   position: absolute;
@@ -1469,8 +1493,9 @@ text-align: left;
   color: #fff;
  }
  .main-cover {
-  width: 74%;
+  width: 62%;
   height: 100%;
+  opacity: 0.7;
 }
 .txt-mid{
   display: none;
@@ -1507,4 +1532,83 @@ text-align: left;
  .leadership-btn > img {
    display: none;
  }
-   }
+ .socials{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  gap: 10px;
+ }
+ .socials > img {
+  width: 200px;
+ }
+ .socials > p {
+  font: 20px "Helvetica Neue LT W1G", Helvetica;
+  color: gray;
+ }
+}
+}
+
+.carousel{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 20px 10px;
+    overflow: hidden;
+  }
+
+  .carousel1 {
+    display: block !important;
+    position: relative;
+    width: 100%;
+    margin: 20px 10px;
+    margin-top: 200px;
+    overflow: hidden;
+  }
+
+.carousel1-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel1-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+  
+  .inNews-single{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 96vw;
+  }
+  .inNews-badge{
+    width: auto;
+  }
+  .press{
+    display: none;
+  }
+}
+
+.carousel1{
+  display: none;
+}
+
+
