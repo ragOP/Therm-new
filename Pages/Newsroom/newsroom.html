@@ -324,6 +324,7 @@
             <p class="inNews-desc">
               Shanya Gill, 12, invented early detection device for fire
             </p>
+            <p class="c-btn">READ MORE</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -335,6 +336,7 @@
               A middle-schooler just won $25,000 for inventing a fire-detection
               device that works faster than the average smoke detector
             </p>
+            <p class="c-btn">READ MORE</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -346,9 +348,11 @@
               A More Accurate Diagnosis Thermo Fisher Scientific Preeclampsia
               Blood Tests
             </p>
+            <p class="c-btn">READ MORE</p>
           </div>
         </div>
       </div>
+      <p class="c-btn">View All News</p>
     </div>
     <div class="leadershipn-main">
       <div class="leadershipn-top">
@@ -791,7 +795,7 @@
           currentIndex = 0;
         }
 
-        const offset = -currentIndex * 100;
+        const offset = -currentIndex * 94;
         carouselInner.style.transform = `translateX(${offset}%)`;
       }
 
@@ -819,7 +823,7 @@
         } else if (currentIndexPress1 >= totalItems1) {
           currentIndexPress1 = 0;
         }
-        const offset1 = -currentIndexPress1 * 100;
+        const offset1 = -currentIndexPress1 * 94;
         carouselInner1.style.transform = `translateX(${offset1}%)`;
       }
 
@@ -830,36 +834,7 @@
       }
 
       window.addEventListener("load", () =>
-        setInterval(autoMoveCarouselPress1, 3000)
-      );
-
-      let currentIndexLeadership2 = 0;
-
-      function moveCarousel2(direction, type) {
-        const carouselInner2 = document.querySelector(`.carousel2-inner`);
-        const items2 = document.querySelectorAll(`.${type}-single`);
-        const totalItems2 = items2.length;
-
-        if (type === "leadershipn") {
-          currentIndexLeadership2 += direction;
-          if (currentIndexLeadership2 < 0) {
-            currentIndexLeadership2 = totalItems2 - 1;
-          } else if (currentIndexLeadership2 >= totalItems2) {
-            currentIndexLeadership2 = 0;
-          }
-          const offset2 = -currentIndexLeadership2 * 100;
-          carouselInner2.style.transform = `translateX(${offset2}%)`;
-        }
-      }
-
-      function autoMoveCarouselLeadership2() {
-        if (window.innerWidth < 768) {
-          moveCarousel2(1, "leadershipn");
-        }
-      }
-
-      window.addEventListener("load", () =>
-        setInterval(autoMoveCarouselLeadership2, 3000)
+        setInterval(autoMoveCarouselPress1, 5000)
       );
     </script>
   </body>
