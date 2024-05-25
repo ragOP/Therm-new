@@ -1115,13 +1115,14 @@ text-align: left;
      gap: 40px;
     }
     .podcast-left, .podcast-right{
-     width: 100vw;
-     height: 140px;
-     background-color: rgba(245, 245, 245, 1);
-     display: flex;
-     align-items: center;
-     gap: 20px;
+      width: 100vw;
+      height: auto;
+      background-color: rgba(245, 245, 245, 1);
+      display: flex;
+      align-items: start;
+      gap: 20px;
     }
+
     .podcast-play{
      display: flex;
      align-items: start;
@@ -1527,6 +1528,13 @@ text-align: left;
  font: 20px "Helvetica Neue LT W1G", Helvetica;
  font-weight: 600;
 }
+.c-para{
+  font: 21px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ padding-left:5px;
+ margin-top: 3px;
+ line-height: 30px;
+}
 .leadershipn-btn > p{
  text-transform: uppercase;
  color: #f03817;
@@ -1592,7 +1600,7 @@ text-align: left;
     position: relative;
     width: 100%;
     margin: 20px 10px;
-    margin-top: 200px;
+    margin-top: 400px;
     overflow: hidden;
   }
 
