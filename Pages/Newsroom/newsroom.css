@@ -590,7 +590,7 @@ body{
  margin-top: 100px;
 }
 .leadershipn-top{
- height: 756px;
+ height: auto;
  background-color: rgba(0, 8, 27, 1);
  padding: 50px 100px;
 }
