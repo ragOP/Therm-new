@@ -277,6 +277,7 @@
           </div>
         </div>
       </div>
+      <div class="carousel1-dots"></div>
     </div>
 
     <div class="inNews">
@@ -360,6 +361,7 @@
           </div>
         </div>
       </div>
+      <div class="carousel-dots"></div>
       <p class="c-btn">View All News</p>
     </div>
     <div class="leadershipn-main">
@@ -803,8 +805,10 @@
           currentIndex = 0;
         }
 
-        const offset = -currentIndex * 94;
+        const offset = -currentIndex * 93;
         carouselInner.style.transform = `translateX(${offset}%)`;
+
+        updateDots();
       }
 
       function autoMoveCarousel() {
@@ -813,15 +817,46 @@
         }
       }
 
-      window.addEventListener("load", () =>
-        setInterval(autoMoveCarousel, 3000)
-      );
-    </script>
-    <script>
+      function createDots() {
+        const carouselDots = document.querySelector(".carousel-dots");
+        const items = document.querySelectorAll(".carousel-item");
+        items.forEach((_, index) => {
+          const dot = document.createElement("div");
+          dot.classList.add("carousel-dot");
+          dot.addEventListener("click", () => moveToSlide(index));
+          carouselDots.appendChild(dot);
+        });
+      }
+
+      function updateDots() {
+        const dots = document.querySelectorAll(".carousel-dot");
+        dots.forEach((dot, index) => {
+          if (index === currentIndex) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      function moveToSlide(index) {
+        currentIndex = index;
+        const offset = -currentIndex * 93;
+        const carouselInner = document.querySelector(".carousel-inner");
+        carouselInner.style.transform = `translateX(${offset}%)`;
+        updateDots();
+      }
+
+      window.addEventListener("load", () => {
+        createDots();
+        updateDots();
+        setInterval(autoMoveCarousel, 3000);
+      });
+
       let currentIndexPress1 = 0;
 
       function moveCarousel1(direction) {
-        const carouselInner1 = document.querySelector(`.carousel1-inner`);
+        const carouselInner1 = document.querySelector(".carousel1-inner");
         const items1 = document.querySelectorAll(".carousel1-item");
         const totalItems1 = items1.length;
 
@@ -831,8 +866,10 @@
         } else if (currentIndexPress1 >= totalItems1) {
           currentIndexPress1 = 0;
         }
-        const offset1 = -currentIndexPress1 * 94;
+        const offset1 = -currentIndexPress1 * 93;
         carouselInner1.style.transform = `translateX(${offset1}%)`;
+
+        updateDots1();
       }
 
       function autoMoveCarouselPress1() {
@@ -841,9 +878,41 @@
         }
       }
 
-      window.addEventListener("load", () =>
-        setInterval(autoMoveCarouselPress1, 5000)
-      );
+      function createDots1() {
+        const carouselDots = document.querySelector(".carousel1-dots");
+        const items1 = document.querySelectorAll(".carousel1-item");
+        items1.forEach((_, index) => {
+          const dot = document.createElement("div");
+          dot.classList.add("carousel1-dot");
+          dot.addEventListener("click", () => moveToSlide1(index));
+          carouselDots.appendChild(dot);
+        });
+      }
+
+      function updateDots1() {
+        const dots = document.querySelectorAll(".carousel1-dot");
+        dots.forEach((dot, index) => {
+          if (index === currentIndexPress1) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      function moveToSlide1(index) {
+        currentIndexPress1 = index;
+        const offset1 = -currentIndexPress1 * 93;
+        const carouselInner1 = document.querySelector(".carousel1-inner");
+        carouselInner1.style.transform = `translateX(${offset1}%)`;
+        updateDots1();
+      }
+
+      window.addEventListener("load", () => {
+        createDots1();
+        updateDots1();
+        setInterval(autoMoveCarouselPress1, 5000);
+      });
     </script>
   </body>
 </html>
