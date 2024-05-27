@@ -409,60 +409,66 @@
             going to succeed:
           </span>
         </p>
-        <div class="leadershipn-single-top">
-          <div class="leadershipn-bottom-single">
-            <p class="percentage">91%</p>
-            <p class="percentage-desc">
-              of scientist agree that Life Sciences companies should prioritize
-              people and humanity over the products and services they provide.
-            </p>
-          </div>
-          <div class="leadershipn-bottom-single">
-            <p class="percentage">76%</p>
-            <p class="percentage-desc">
-              of scientists believe they will live to see a complete cure to
-              most types of cancers during their lifetime.
-            </p>
-          </div>
-          <div class="leadershipn-bottom-single">
-            <p class="percentage">92%</p>
-            <p class="percentage-desc">
-              of scientists say implementation of environmentally responsible
-              R&D can be achieved by 2050.
-            </p>
+        <div class="carousel2">
+          <div class="carousel2-inner">
+            <div class="leadershipn-bottom-single">
+              <p class="percentage">91%</p>
+              <p class="percentage-desc">
+                of scientist agree that Life Sciences companies should
+                prioritize people and humanity over the products and services
+                they provide.
+              </p>
+            </div>
+            <div class="leadershipn-bottom-single">
+              <p class="percentage">76%</p>
+              <p class="percentage-desc">
+                of scientists believe they will live to see a complete cure to
+                most types of cancers during their lifetime.
+              </p>
+            </div>
+            <div class="leadershipn-bottom-single">
+              <p class="percentage">92%</p>
+              <p class="percentage-desc">
+                of scientists say implementation of environmentally responsible
+                R&D can be achieved by 2050.
+              </p>
+            </div>
           </div>
         </div>
+
         <p class="leadership-bottom-top">
           By 2030, <span>scientist believe the following:</span>
         </p>
-        <div class="leadershipn-single-bottom">
-          <div class="leadership-bottom-single">
-            <p class="percentage">88%</p>
-            <p class="percentage-desc">
-              believe that artificial intelligence computing will have
-              completely transformed the operation of labs.
-            </p>
-          </div>
-          <div class="leadership-bottom-single">
-            <p class="percentage">74%</p>
-            <p class="percentage-desc">
-              say that fewer human workers will be needed in labs because of
-              productivity gains tied to robotics.
-            </p>
-          </div>
-          <div class="leadership-bottom-single">
-            <p class="percentage">74%</p>
-            <p class="percentage-desc">
-              agree that by 2030, virtual labs will rival traditional ones in
-              terms of numbers and output.
-            </p>
-          </div>
-          <div class="leadership-bottom-single">
-            <p class="percentage">64%</p>
-            <p class="percentage-desc">
-              say the labs of 2030 will be unrecognizable compared to right
-              before the pandemic.
-            </p>
+        <div class="carousel3">
+          <div class="carousel3-inner">
+            <div class="leadership-bottom-single">
+              <p class="percentage">88%</p>
+              <p class="percentage-desc">
+                believe that artificial intelligence computing will have
+                completely transformed the operation of labs.
+              </p>
+            </div>
+            <div class="leadership-bottom-single">
+              <p class="percentage">74%</p>
+              <p class="percentage-desc">
+                say that fewer human workers will be needed in labs because of
+                productivity gains tied to robotics.
+              </p>
+            </div>
+            <div class="leadership-bottom-single">
+              <p class="percentage">74%</p>
+              <p class="percentage-desc">
+                agree that by 2030, virtual labs will rival traditional ones in
+                terms of numbers and output.
+              </p>
+            </div>
+            <div class="leadership-bottom-single">
+              <p class="percentage">64%</p>
+              <p class="percentage-desc">
+                say the labs of 2030 will be unrecognizable compared to right
+                before the pandemic.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -530,7 +536,7 @@
             Get updates on the latest investor events, reports, news and more
             from our IR team.
           </p>
-          <p class="email">email ID</p>
+          <p class="email">Email ID</p>
           <input type="email" placeholder="primary_investor@vc.com" />
         </div>
         <div class="newsletter-img">
@@ -912,6 +918,61 @@
         createDots1();
         updateDots1();
         setInterval(autoMoveCarouselPress1, 5000);
+      });
+
+      let currentIndex2 = 0;
+
+      function moveCarousel2(direction) {
+        const carouselInner2 = document.querySelector(".carousel2-inner");
+        const items2 = document.querySelectorAll(".leadershipn-bottom-single");
+        const totalItems2 = items2.length;
+
+        currentIndex2 += direction;
+
+        if (currentIndex2 < 0) {
+          currentIndex2 = totalItems2 - 1;
+        } else if (currentIndex2 >= totalItems2) {
+          currentIndex2 = 0;
+        }
+        const offset2 = -currentIndex2 * 80;
+        carouselInner2.style.transform = `translateX(${offset2}%)`;
+      }
+      function autoMoveCarousel2() {
+        if (window.innerWidth < 768) {
+          moveCarousel2(1);
+        }
+      }
+      window.addEventListener("load", () => {
+        setInterval(autoMoveCarousel2, 2000);
+      });
+
+      let currentIndex3 = 0;
+
+      function moveCarousel3(direction) {
+        const carouselInner3 = document.querySelector(".carousel3-inner");
+        const items3 = document.querySelectorAll(".leadership-bottom-single");
+        const totalItems3 = items3.length;
+
+        currentIndex3 += direction;
+
+        if (currentIndex3 < 0) {
+          currentIndex3 = totalItems3 - 1;
+        } else if (currentIndex3 >= totalItems3) {
+          currentIndex3 = 0;
+        }
+
+        const offset3 = -currentIndex3 * 80;
+        carouselInner3.style.transform = `translateX(${offset3}%)`;
+      }
+
+      function autoMoveCarousel3() {
+        if (window.innerWidth < 768) {
+          moveCarousel3(1);
+        }
+      }
+
+      window.addEventListener("load", () => {
+        setInterval(autoMoveCarousel3, 3000);
       });
     </script>
   </body>

@@ -773,6 +773,7 @@ body{
  font-weight: 500;
  line-height: 22px;
  text-align: left;
+ font-weight: 500;
 }
 .newsletter-text > input{
  width: 452px;
@@ -1234,7 +1235,7 @@ text-align: left;
      width: 100%;
  }
  .leadershipn-top {
-  height: 756px;
+  height: auto;
   background-color: rgba(0, 8, 27, 1);
   padding: 0px;
 }
@@ -1379,7 +1380,6 @@ text-align: left;
    }
    .leadershipn-bottom {
     padding: 15px;
-    margin-top: 830px;
    }
    .with-background {
     margin-top: 40px;
@@ -1412,7 +1412,7 @@ text-align: left;
    .email{
     margin-left: 10px;
     font: 18px "Helvetica Neue LT W1G", Helvetica;
-    text-transform: uppercase;
+    font-weight: 500;
    }
    .newsletter-text > input {
     width: 175px;
@@ -1683,6 +1683,34 @@ text-align: left;
 .carousel-dot.active {
   background-color: red;
   transform: scaleX(2);
+}
+.carousel2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel2-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 10px;
+}
+
+.leadershipn-bottom-single {
+  width: 96vw;
+  box-sizing: border-box;
+}
+
+.carousel3 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel3-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 10px;
 }
 
 
