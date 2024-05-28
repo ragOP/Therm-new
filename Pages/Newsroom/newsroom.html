@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./newsroom.css" />
   </head>
-  <body>
+  <body style="overflow-x: hidden">
     <!-- <div class="navbar">
       <a href="/index.html">
         <div class="navlogo">
@@ -121,24 +121,91 @@
         </div>
       </div>
     </div>
-    <div class="main-news">
-      <img src="../../Assets/Images/saaa.png" alt="" />
-      <div class="main-poistion">
-        <img class="main-cover" src="../../Assets/Images/saa.png" alt="" />
-        <div class="image-txt">
-          <p class="txt-top">Our Stories</p>
-          <p class="txt-mid">
-            My work is a story <br />
-            of
-            <span>
-              problem <br />
-              solving.
-            </span>
-          </p>
-          <img class="txt-slider" src="../../Assets/Images/sa.png" alt="" />
+    <div class="carousel4">
+      <div class="carousel4-inner">
+        <div class="carousel4-item">
+          <img src="../../Assets/Images/saaa.png" alt="" />
+        </div>
+        <div class="carousel4-item">
+          <img src="../../Assets/Images/saaa.png" alt="" />
+        </div>
+        <div class="carousel4-item">
+          <img src="../../Assets/Images/saaa.png" alt="" />
+        </div>
+        <div class="carousel4-item">
+          <img class="main-cover" src="../../Assets/Images/saa.png" alt="" />
+          <div class="image-txt">
+            <p class="txt-top">Our Stories</p>
+            <p class="txt-mid">
+              My work is a story <br />
+              of
+              <span>
+                problem <br />
+                solving.
+              </span>
+            </p>
+            <img class="txt-slider" src="../../Assets/Images/sa.png" alt="" />
+          </div>
+        </div>
+        <div class="carousel4-item">
+          <div class="image-txt">
+            <p class="txt-top">Our Stories</p>
+            <p class="txt-mid">
+              My work is a story <br />
+              of
+              <span>
+                problem <br />
+                solving.
+              </span>
+            </p>
+            <img class="txt-slider" src="../../Assets/Images/sa.png" alt="" />
+          </div>
+        </div>
+        <div class="carousel4-item">
+          <div class="image-txt">
+            <p class="txt-top">Our Stories</p>
+            <p class="txt-mid">
+              My work is a story <br />
+              of
+              <span>
+                problem <br />
+                solving.
+              </span>
+            </p>
+            <img class="txt-slider" src="../../Assets/Images/sa.png" alt="" />
+          </div>
+        </div>
+        <div class="carousel4-item">
+          <div class="image-txt">
+            <p class="txt-top">Our Stories</p>
+            <p class="txt-mid">
+              My work is a story <br />
+              of
+              <span>
+                problem <br />
+                solving.
+              </span>
+            </p>
+            <img class="txt-slider" src="../../Assets/Images/sa.png" alt="" />
+          </div>
+        </div>
+        <div class="carousel4-item">
+          <div class="image-txt">
+            <p class="txt-top">Our Stories</p>
+            <p class="txt-mid">
+              My work is a story <br />
+              of
+              <span>
+                problem <br />
+                solving.
+              </span>
+            </p>
+            <img class="txt-slider" src="../../Assets/Images/sa.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
+
     <div class="podcast">
       <div class="podcast-title">Latest Podcasts</div>
       <div class="main-podcast">
@@ -664,7 +731,7 @@
       }
 
       function autoMoveCarousel() {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 961) {
           moveCarousel(1);
         }
       }
@@ -725,7 +792,7 @@
       }
 
       function autoMoveCarouselPress1() {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 961) {
           moveCarousel1(1);
         }
       }
@@ -769,7 +836,7 @@
       let currentIndex2 = 0;
 
       function moveCarousel2(direction) {
-        const carouselInner2 = document.querySelector(".carousel2-inner");
+        const carouselInner2 = document.querySelector(".bodycarousel2-inner");
         const items2 = document.querySelectorAll(".leadershipn-bottom-single");
         const totalItems2 = items2.length;
 
@@ -784,7 +851,7 @@
         carouselInner2.style.transform = `translateX(${offset2}%)`;
       }
       function autoMoveCarousel2() {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 961) {
           moveCarousel2(1);
         }
       }
@@ -812,13 +879,38 @@
       }
 
       function autoMoveCarousel3() {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 961) {
           moveCarousel3(1);
         }
       }
 
       window.addEventListener("load", () => {
         setInterval(autoMoveCarousel3, 3000);
+      });
+
+      let currentIndex4 = 0;
+
+      function moveCarousel4(direction) {
+        const carouselInner4 = document.querySelector(".carousel4-inner");
+        const items4 = document.querySelectorAll(".carousel4-item");
+        const totalItems4 = items4.length;
+        currentIndex4 += direction;
+        if (currentIndex4 < 0) {
+          currentIndex4 = totalItems4 - 1;
+        } else if (currentIndex4 >= totalItems4) {
+          currentIndex4 = 0;
+        }
+        const offset4 = -currentIndex4 * 100;
+        carouselInner4.style.transform = `translateX(${offset4}%)`;
+      }
+
+      function autoMoveCarousel4() {
+        if (window.innerWidth < 961) {
+          moveCarousel4(1);
+        }
+      }
+      window.addEventListener("load", () => {
+        setInterval(autoMoveCarousel4, 2000);
       });
     </script>
   </body>

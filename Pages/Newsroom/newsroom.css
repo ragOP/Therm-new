@@ -707,6 +707,7 @@ body{
  border-radius: 4px 0px 0px 0px;
  background-color: rgba(155, 211, 221, 1);
  padding: 20px;
+ height: auto;
 }
 .leadership-btn{
  margin-left: 100px;
@@ -1163,6 +1164,7 @@ body{
       font-weight: 400;
       line-height: 42px;
       text-align: left;
+      padding: 0 10px;
     }
     .newsroom-about-left-heading > span {
      font-weight: 700;
@@ -1211,6 +1213,7 @@ body{
     }
     .newsroom-about-about{
      margin-top: -80px;
+     padding: 0px 12px;
     }
     .main-btn-newsroom > p{
      font: 16px "Helvetica Neue LT W1G", Helvetica;
@@ -1629,12 +1632,12 @@ body{
   height: 100%;
   opacity: 0.7;
 }
-.txt-mid{
+/* .txt-mid{
   display: none;
 }
 .txt-top{
   display: none;
-}
+} */
 .txt-slider{
   top: 1px;
 }
@@ -1719,13 +1722,12 @@ body{
     margin: 27px 10px;
     overflow: hidden;
   }
-
   .carousel1 {
     display: block !important;
     position: relative;
     width: 100%;
     margin: 20px 10px;
-    margin-top: 400px;
+    margin-top: 200px;
     overflow: hidden;
   }
 
@@ -1824,6 +1826,7 @@ body{
 .leadershipn-bottom-single {
   width: 96vw;
   box-sizing: border-box;
+  height: auto;
 }
 
 .carousel3 {
@@ -1837,6 +1840,39 @@ body{
   transition: transform 0.5s ease;
   gap: 10px;
 }
+.carousel4 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
 
+.carousel4-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
 
+.carousel4-item {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden !important;
+}
+.c-para{
+  display: none;
+}
+
+@media (min-width: 780px) and (max-width: 1024px) { 
+  .podcast-play {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -21px;
+  }
+  .inNews-single > img {
+    margin-top: 10px;
+    width: 263px;
+}
+}
 
