@@ -121,6 +121,30 @@
         </div>
       </div>
     </div>
+    <div class="carousel5">
+      <div class="main-header-title">Our Stories</div>
+      <div class="carousel5-inner">
+        <div class="main-header">
+          <p class="txt-mid1">
+            My work is a story of <br />
+            <span> problem solving. </span>
+          </p>
+        </div>
+        <div class="main-header">
+          <p class="txt-mid1">
+            My work is a story of <br />
+            <span> problem solving. </span>
+          </p>
+        </div>
+        <div class="main-header">
+          <p class="txt-mid1">
+            My work is a story of <br />
+            <span> problem solving. </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div class="carousel4">
       <div class="carousel4-inner">
         <div class="carousel4-item">
@@ -963,6 +987,28 @@
         updateDots4();
         setInterval(autoMoveCarousel4, 2000);
       });
+      let currentIndex5 = 0;
+
+      function moveCarousel5() {
+        const carouselInner5 = document.querySelector(".carousel5-inner");
+        const items5 = document.querySelectorAll(".main-header");
+        const totalItems5 = items5.length;
+
+        currentIndex5++;
+
+        if (currentIndex5 >= totalItems5) {
+          currentIndex5 = 0;
+        }
+
+        const offset5 = -currentIndex5 * 100;
+        carouselInner5.style.transform = `translateX(${offset5}%)`;
+      }
+
+      function autoMoveCarousel5() {
+        setInterval(moveCarousel5, 2000);
+      }
+
+      window.addEventListener("load", autoMoveCarousel5);
     </script>
   </body>
 </html>
