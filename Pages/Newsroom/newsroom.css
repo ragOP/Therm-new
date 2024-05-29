@@ -139,6 +139,7 @@ body{
  display: flex;
  align-items: center;
  gap: 100px;
+ margin-top: -36px;
 }
 .newsroom-about-left-heading{
  font: 50px "Helvetica Neue LT W1G", Helvetica;
@@ -466,7 +467,7 @@ body{
 }
 .press{
  height: 609px;
- margin-top: 100px;
+ margin-top: -10px;
  padding: 50px 100px;
 }
 .press-title {
@@ -486,7 +487,7 @@ body{
  gap: 16px;
 }
 .press-single{
- width: 398px;
+  width: 486px;
  height: 368px;
 }
 .press-single > img{
@@ -537,6 +538,7 @@ body{
  height: 593px;
  padding: 50px 100px;
  margin-bottom: 100px;
+ margin-top: -117px;
 }
 .inNews-title{
  color: var(--Accent-Teal, #00677f);
@@ -563,8 +565,12 @@ body{
  text-align: left;
  color: #fff;
 }
+.inNews-single{
+  width: 33%;
+}
 .inNews-single > img {
  margin-top: 10px;
+ width: 100%;
 }
 .inNews-date{
  font: 20px "Helvetica Neue LT W1G", Helvetica;
@@ -612,6 +618,7 @@ body{
 }
 .leadershipn-right{
  padding: 30px;
+ padding-bottom: 0;
 }
 .leadershipn-top-right{
  font: 30px "Helvetica Neue LT W1G", Helvetica;
@@ -702,7 +709,7 @@ body{
  margin-top: 10px;
 }
 .leadership-bottom-single{
- width: 293px;
+ width: 325px;
  height: 176px;
  border-radius: 4px 0px 0px 0px;
  background-color: rgba(155, 211, 221, 1);
@@ -1013,7 +1020,7 @@ body{
    .socials{
     display: none;
    }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 850px) {
    .footer-first{
      width: 100%;
    }
@@ -1022,7 +1029,7 @@ body{
    }
    }
 
-   @media (min-width: 768px) and (max-width: 992px) {
+   @media (min-width: 850px) and (max-width: 1024px) {
     .footer,
     .pre-footer {
       flex-wrap: wrap;
@@ -1077,7 +1084,7 @@ body{
     }
   }
 
-   @media only screen and (max-width: 768px) {
+   @media only screen and (max-width: 850px) {
     .footer-first {
       width: 100%;
       order: 2;
@@ -1553,7 +1560,7 @@ body{
   margin-left: 20px;
   padding: 10px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   .newsletter-text > input::placeholder{
     color: #000;
     font: 14px "Helvetica Neue LT W1G", Helvetica;
@@ -1630,7 +1637,6 @@ body{
  .main-cover {
   width: 62%;
   height: 100%;
-  opacity: 0.7;
 }
 /* .txt-mid{
   display: none;
@@ -1648,7 +1654,7 @@ body{
   height: 213px;
 }
 .percentage-desc {
-  width: 71vw;
+  width: 65vw;
 }
 .c-btn{
   text-transform: uppercase;
@@ -1662,6 +1668,7 @@ body{
  padding-left:5px;
  margin-top: 3px;
  line-height: 30px;
+ display: block !important;
 }
 .leadershipn-btn > p{
  text-transform: uppercase;
@@ -1714,13 +1721,19 @@ body{
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   .carousel {
     display: block;
     position: relative;
     width: 100%;
     margin: 27px 10px;
     overflow: hidden;
+  }
+  .txt-mid{
+    display: none;
+  }
+  .txt-top{
+    display: none;
   }
   .carousel1 {
     display: block !important;
@@ -1767,6 +1780,12 @@ body{
   }
   .author {
     margin-top: -19px;
+  }
+  .carousel4 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -87px;
   }
 }
 
@@ -1875,4 +1894,49 @@ html{
     width: 263px;
 }
 }
+
+.carousel4 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel4-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel4-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel4-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel4-dot {
+  width: 15px;
+  height: 10px;
+  background-color: #fff;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel4-dot.active {
+  background-color: #fff;
+  transform: scaleX(1.5);
+}
+.animation-btn:hover{
+  color: red;
+}
+.animation-btn{
+  cursor: pointer;
+}
+
+
+
 
