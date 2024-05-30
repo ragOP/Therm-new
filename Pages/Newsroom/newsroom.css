@@ -500,7 +500,7 @@ body{
  gap: 16px;
 }
 .press-single{
-  width: 486px;
+  width: 33%;
  height: 368px;
 }
 .press-single > img{
@@ -2064,7 +2064,6 @@ width: 280%;
   }
   .inNews-single > img {
     margin-top: 10px;
-    width: 263px;
 }
 }
 
