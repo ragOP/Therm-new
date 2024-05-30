@@ -1667,7 +1667,7 @@ body{
   height: 213px;
 }
 .percentage-desc {
-  width: 65vw;
+  width: 70vw;
 }
 .c-btn{
   text-transform: uppercase;
@@ -1904,9 +1904,11 @@ html{
 @media (min-width: 780px) and (max-width: 1024px) { 
   .podcast-play {
     display: flex;
-    align-items: center;
+    align-items: start;
+    justify-content: start;
     gap: 10px;
-    margin-top: -21px;
+    margin-top: 20px;
+    flex-direction: column;
   }
   .inNews-single > img {
     margin-top: 10px;

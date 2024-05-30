@@ -133,13 +133,13 @@
         <div class="main-header">
           <p class="txt-mid1">
             My work is a story of <br />
-            <span> problem solving. </span>
+            <span> solving issues. </span>
           </p>
         </div>
         <div class="main-header">
           <p class="txt-mid1">
             My work is a story of <br />
-            <span> problem solving. </span>
+            <span> slove unsolve. </span>
           </p>
         </div>
       </div>
@@ -226,7 +226,7 @@
       <div class="podcast-title">Latest Podcasts</div>
       <div class="main-podcast">
         <div class="podcast-left">
-          <div style="width: 34%">
+          <div style="width: 34%; padding-left: 10px">
             <img src="../../Assets/Images/podcast-placeholder 1.png" alt="" />
             <p class="c-para" style="width: 295%">
               Delivering on the promise of cell therapies: Programmed immune
@@ -247,7 +247,7 @@
           </div>
         </div>
         <div class="podcast-right">
-          <div style="width: 34%">
+          <div style="width: 34%; padding-left: 10px">
             <img src="../../Assets/Images/podcast-placeholder 1.png" alt="" />
             <p class="c-para" style="width: 295%">
               Disrupting the Status Quo: The Importance of Diversity in Clinical
@@ -864,7 +864,7 @@
       let currentIndex2 = 0;
 
       function moveCarousel2(direction) {
-        const carouselInner2 = document.querySelector(".bodycarousel2-inner");
+        const carouselInner2 = document.querySelector(".carousel2-inner");
         const items2 = document.querySelectorAll(".leadershipn-bottom-single");
         const totalItems2 = items2.length;
 
@@ -875,16 +875,19 @@
         } else if (currentIndex2 >= totalItems2) {
           currentIndex2 = 0;
         }
+
         const offset2 = -currentIndex2 * 80;
         carouselInner2.style.transform = `translateX(${offset2}%)`;
       }
+
       function autoMoveCarousel2() {
-        if (window.innerWidth < 961) {
+        if (window.innerWidth < 850) {
           moveCarousel2(1);
         }
       }
+
       window.addEventListener("load", () => {
-        setInterval(autoMoveCarousel2, 2000);
+        setInterval(autoMoveCarousel2, 3000);
       });
 
       let currentIndex3 = 0;
@@ -907,7 +910,7 @@
       }
 
       function autoMoveCarousel3() {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 850) {
           moveCarousel3(1);
         }
       }
