@@ -43,11 +43,11 @@
         overflow: hidden;
         background-color: #fff;
         position: fixed;
-        width: 90%;
+        width: 100%;
         top: 0;
         padding: 10px 20px;
         z-index: 12;
-        display: flex;
+        /* display: flex; */
         align-items: center;
       }
 
@@ -71,7 +71,7 @@
         background: #fff;
         display: block;
         position: absolute;
-        right: 20px;
+        right: 80px;
         top: 10px;
       }
 
@@ -1181,6 +1181,22 @@
       }
 
       window.addEventListener("load", autoMoveCarousel5);
+    </script>
+    <script>
+      var dropdown1 = document.getElementsByClassName("dropdown-btn");
+      console.log(dropdown);
+      var i;
+      for (i = 0; i < dropdown1.length; i++) {
+        dropdown1[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdown1Content = this.nextElementSibling;
+          if (dropdown1Content.style.display === "block") {
+            dropdown1Content.style.display = "none";
+          } else {
+            dropdown1Content.style.display = "block";
+          }
+        });
+      }
     </script>
   </body>
 </html>
