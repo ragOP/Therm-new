@@ -111,17 +111,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const dropdown = document.getElementById("dropdown");
     const csr = document.getElementById("csr-link");
 
-    if (dropdown.style.display === "block") {
+    if (dropdown.style.display === "flex") {
       csr.classList.add("on");
     } else {
       csr.classList.add("on");
     }
     csr.addEventListener("click", () => {
-      if (dropdown.style.display === "block") {
+      if (dropdown.style.display === "flex") {
         dropdown.style.display = "none";
         csr.classList.add("on");
       } else {
-        dropdown.style.display = "block";
+        dropdown.style.display = "flex";
         csr.classList.add("on");
       }
     });
