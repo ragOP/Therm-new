@@ -318,7 +318,7 @@
       <div class="carousel4-inner">
         <div class="carousel4-item">
           <div class="main-news">
-            <img src="../../Assets/Images/saaa.png" alt="" />
+            <img class="main-img" src="../../Assets/Images/saaa.png" alt="" />
             <div class="main-poistion">
               <img
                 class="main-cover"
@@ -342,7 +342,7 @@
         </div>
         <div class="carousel4-item">
           <div class="main-news">
-            <img src="../../Assets/Images/saaa.png" alt="" />
+            <img class="main-img" src="../../Assets/Images/saaa.png" alt="" />
             <div class="main-poistion">
               <img
                 class="main-cover"
@@ -366,7 +366,7 @@
         </div>
         <div class="carousel4-item">
           <div class="main-news">
-            <img src="../../Assets/Images/saaa.png" alt="" />
+            <img class="main-img" src="../../Assets/Images/saaa.png" alt="" />
             <div class="main-poistion">
               <img
                 class="main-cover"
@@ -1201,6 +1201,23 @@
           }
         });
       }
+    </script>
+    <script>
+      function updateImageSrc() {
+        const images = document.querySelectorAll(".main-img");
+        if (window.innerWidth < 768) {
+          images.forEach((img) => {
+            img.src = "../../Assets/Images/kaaa.png";
+          });
+        } else {
+          images.forEach((img) => {
+            img.src = "../../Assets/Images/saaa.png";
+          });
+        }
+      }
+
+      window.addEventListener("resize", updateImageSrc);
+      window.addEventListener("load", updateImageSrc);
     </script>
   </body>
 </html>
