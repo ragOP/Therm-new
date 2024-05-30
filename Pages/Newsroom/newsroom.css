@@ -451,7 +451,7 @@ body{
  gap: 40px;
 }
 .podcast-left, .podcast-right{
- width: 600px;
+ width: 50%;
  height: 140px;
  background-color: rgba(245, 245, 245, 1);
  display: flex;
@@ -539,6 +539,7 @@ body{
  align-items: center;
  gap: 8px;
  margin-top: 40px;
+ margin-left: 15px;
 }
 .podcast-btn > p {
  font: 16px "Helvetica Neue LT W1G", Helvetica;
@@ -1131,7 +1132,7 @@ body{
       display: block !important;
      }
      .def1{
-      width: 14% !important;
+      width: 17% !important;
       padding-left: 20px !important;
      }
      .podcast-play{
@@ -2021,7 +2022,7 @@ body{
   box-sizing: border-box;
 }
 .def1{
-  width: 34%;
+  width: 43%;
   padding: 0px;
 }
 html{

@@ -1052,6 +1052,8 @@
       function autoMoveCarousel2() {
         if (window.innerWidth < 850) {
           moveCarousel2(1);
+        } else {
+          carouselInner2.style.transform = translateX(0);
         }
       }
 
@@ -1079,8 +1081,10 @@
       }
 
       function autoMoveCarousel3() {
-        if (window.innerWidth < 850) {
+        if (window.innerWidth < 768) {
           moveCarousel3(1);
+        } else {
+          carouselInner3.style.transform = translateX(0);
         }
       }
 
