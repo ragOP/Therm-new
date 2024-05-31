@@ -443,6 +443,7 @@
       </div>
     </div>
     <div class="press">
+      <p class="inNews-title">PRESS RELEASES</p>
       <div class="press-main">
         <div class="press-single">
           <img src="../../Assets/Images/press1.png" alt="" />
@@ -475,6 +476,7 @@
       </div>
     </div>
     <div class="carousel1">
+      <p class="inNews-title">PRESS RELEASES</p>
       <div class="carousel1-inner">
         <div class="carousel1-item">
           <div class="press-single">
@@ -555,6 +557,7 @@
       </div>
     </div>
     <div class="carousel">
+      <p class="inNews-title">IN THE NEWS</p>
       <div class="carousel-inner">
         <div class="carousel-item">
           <div class="inNews-single">
@@ -564,7 +567,7 @@
             <p class="inNews-desc">
               Shanya Gill, 12, invented early detection device for fire
             </p>
-            <p class="c-btn naimtion-btn">READ MORE</p>
+            <p class="c-btn nimation-btn">READ MORE</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -576,7 +579,7 @@
               A middle-schooler just won $25,000 for inventing a fire-detection
               device that works faster than the average smoke detector
             </p>
-            <p class="c-btn animation-btn">READ MORE</p>
+            <p class="c-btn nimation-btn">READ MORE</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -588,12 +591,12 @@
               A More Accurate Diagnosis Thermo Fisher Scientific Preeclampsia
               Blood Tests
             </p>
-            <p class="c-btn animation-btn">READ MORE</p>
+            <p class="c-btn nimation-btn">READ MORE</p>
           </div>
         </div>
       </div>
       <div class="carousel-dots"></div>
-      <p class="c-btn">View All News</p>
+      <p class="c-btn" style="margin-left: 4px">View All News</p>
     </div>
     <div class="leadershipn-main">
       <div class="leadershipn-top">
@@ -619,7 +622,7 @@
             </p>
             <div class="leadershipn-btn">
               <img src="../../Assets/Images/redsmall.svg" alt="" />
-              <p class="animation-btn def">Read whitepaper</p>
+              <p class="animation-btn def change1">Read whitepaper</p>
             </div>
           </div>
         </div>
@@ -705,7 +708,7 @@
       </div>
       <div class="leadership-btn">
         <img src="../../Assets/Images/redsmall.svg" alt="" />
-        <p class="animation-btn">Learn more</p>
+        <p class="animation-btn change">Learn more about thought leadership</p>
       </div>
     </div>
     <div class="main-media with-background">
@@ -1246,6 +1249,26 @@
 
       window.addEventListener("resize", updateImageSrc);
       window.addEventListener("load", updateImageSrc);
+    </script>
+    <script>
+      function updateText() {
+        const element1 = document.querySelector(".change");
+        const element2 = document.querySelector(".change1");
+
+        if (window.innerWidth <= 850) {
+          element1.textContent = "Learn more";
+          element2.textContent = "View whitepaper";
+        } else {
+          element1.textContent = "Learn more about thought leadership";
+          element2.textContent = "Read whitepaper";
+        }
+      }
+
+      // Initial check
+      updateText();
+
+      // Listen for window resize events
+      window.addEventListener("resize", updateText);
     </script>
   </body>
 </html>
