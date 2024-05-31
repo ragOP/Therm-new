@@ -2170,7 +2170,8 @@ color: #4A4A4A;
   text-transform: uppercase;
   white-space: nowrap;
 }
-.main-btn-newsroom > p {
+.main-btn-newsroom > p, 
+.podcast-btn > p  {
   font: 25px "Helvetica Neue LT W1G", Helvetica;
 }
 .image-txt{
@@ -2180,23 +2181,23 @@ color: #4A4A4A;
   color: #fff;
  }
  .txt-top{
-  font: 25px "Helvetica Neue LT W1G", Helvetica;
+  font: 30px "Helvetica Neue LT W1G", Helvetica;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 40px;
   letter-spacing: 0.1em;
   text-align: left;
   text-transform: uppercase;
  }
 .txt-mid, .txt-mid1{
-  font: 45px "Helvetica Neue LT W1G", Helvetica;
+  font: 55px "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
-  line-height: 70px;
+  line-height: 80px;
   text-align: left;
   margin-top: 20px;
  }
  .main-news {
   width: 100%;
-  height: 530px;
+  height: 620px;
   margin-top: 70px;
   position: relative;
 }
@@ -2256,7 +2257,8 @@ color: #4A4A4A;
   text-transform: uppercase;
   white-space: nowrap;
 }
-.main-btn-newsroom > p {
+.main-btn-newsroom > p, 
+.podcast-btn > p  {
   font: 28px "Helvetica Neue LT W1G", Helvetica;
 }
 .image-txt{
@@ -2266,23 +2268,23 @@ color: #4A4A4A;
   color: #fff;
  }
  .txt-top{
-  font: 35px "Helvetica Neue LT W1G", Helvetica;
+  font: 40px "Helvetica Neue LT W1G", Helvetica;
   font-weight: 700;
-  line-height: 45px;
+  line-height: 55px;
   letter-spacing: 0.1em;
   text-align: left;
   text-transform: uppercase;
  }
 .txt-mid, .txt-mid1{
-  font: 55px "Helvetica Neue LT W1G", Helvetica;
+  font: 65px "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
-  line-height: 80px;
+  line-height: 90px;
   text-align: left;
   margin-top: 20px;
  }
  .main-news {
   width: 100%;
-  height: 650px;
+  height: 720px;
   margin-top: 70px;
   position: relative;
 }
@@ -2338,11 +2340,15 @@ color: #4A4A4A;
   text-transform: uppercase;
   white-space: nowrap;
 }
-.main-btn-newsroom > p {
+.main-btn-newsroom > p, 
+.podcast-btn > p {
   font: 38px "Helvetica Neue LT W1G", Helvetica;
 }
-.main-btn-newsroom > img {
+.main-btn-newsroom > img, .podcast-btn > img {
   width: 40px;
+}
+.podcast-btn, .main-btn-newsroom {
+  gap: 18px;
 }
 .image-txt{
   position: absolute;
@@ -2351,23 +2357,23 @@ color: #4A4A4A;
   color: #fff;
  }
  .txt-top{
-  font: 45px "Helvetica Neue LT W1G", Helvetica;
+  font: 55px "Helvetica Neue LT W1G", Helvetica;
   font-weight: 700;
-  line-height: 45px;
+  line-height: 65px;
   letter-spacing: 0.1em;
   text-align: left;
   text-transform: uppercase;
  }
 .txt-mid, .txt-mid1{
-  font: 65px "Helvetica Neue LT W1G", Helvetica;
+  font: 80px "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
-  line-height: 100px;
+  line-height: 120px;
   text-align: left;
   margin-top: 20px;
  }
  .main-news {
   width: 100%;
-  height: 750px;
+  height: 830px;
   margin-top: 70px;
   position: relative;
 }
