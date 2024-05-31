@@ -2137,6 +2137,41 @@ color: #4A4A4A;
   }
 }
 
-
+@media only screen and (min-width: 1700px) {
+  .newsroom-about-left-heading{
+    font: 70px "Helvetica Neue LT W1G", Helvetica;
+    line-height: 80px;
+   }
+   .newsroom-top {
+    font: 35px "Helvetica Neue LT W1G", Helvetica;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: left;
+  }
+  .newsroom-right{
+    font: 35px "Helvetica Neue LT W1G", Helvetica;
+    font-weight: 700;
+    line-height: 43px;
+    text-align: left;
+    margin-top: 50px;
+  }
+  .newsroom-about {
+    margin-top: 128px;
+    padding: 0 100px;
+}
+.newsroom-about-title {
+  color: var(--Accent-Teal, #00677f);
+  font: 24px "Helvetica Neue LT W1G", Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.main-btn-newsroom > p {
+  font: 25px "Helvetica Neue LT W1G", Helvetica;
+}
+}
 
 
