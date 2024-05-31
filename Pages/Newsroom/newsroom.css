@@ -15,7 +15,9 @@ body{
   z-index: 1000;
   height: 80px;
 }
-
+.podcast-text{
+  flex: 1;
+}
 .navlogo {
   height: 80px;
 }
@@ -432,8 +434,9 @@ body{
  height: 100%;
 }
 .podcast{
- height: 289px;
+ height: auto;
  padding: 50px 100px;
+ margin-top: 30px;
 }
 .podcast-title {
  color: var(--Accent-Teal, #00677f);
@@ -454,7 +457,7 @@ body{
 }
 .podcast-left, .podcast-right{
  width: 50%;
- height: 140px;
+ height: auto;
  background-color: rgba(245, 245, 245, 1);
  display: flex;
  align-items: center;
@@ -2024,10 +2027,6 @@ body{
   width: 100%;
   box-sizing: border-box;
 }
-.def1{
-  width: 43%;
-  padding: 0px;
-}
 html{
   overflow-x: hidden !important;
 }
@@ -2161,7 +2160,7 @@ color: #4A4A4A;
     margin-top: 128px;
     padding: 0 120px;
 }
-.newsroom-about-title {
+.newsroom-about-title, .podcast-title {
   color: var(--Accent-Teal, #00677f);
   font: 24px "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
@@ -2206,6 +2205,23 @@ color: #4A4A4A;
   top: 0;
   height: 100%;
 }
+.def1 > img {
+  width: 200px;
+}
+.podcast-top {
+  font: 26px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 36px;
+  margin-top: 20px;
+  text-align: left;
+}
+.play-text {
+  font: 20px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: rgba(231, 19, 22, 1);
+}
 }
 
 @media only screen and (min-width: 2400px) {
@@ -2230,7 +2246,7 @@ color: #4A4A4A;
     margin-top: 128px;
     padding: 0 140px;
 }
-.newsroom-about-title {
+.newsroom-about-title, .podcast-title {
   color: var(--Accent-Teal, #00677f);
   font: 30px "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
@@ -2270,6 +2286,23 @@ color: #4A4A4A;
   margin-top: 70px;
   position: relative;
 }
+.def1 > img {
+  width: 270px;
+}
+.podcast-top {
+  font: 30px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 20px;
+  text-align: left;
+}
+.play-text {
+  font: 26px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  color: rgba(231, 19, 22, 1);
+}
 }
 
 
@@ -2295,7 +2328,7 @@ color: #4A4A4A;
     margin-top: 128px;
     padding: 0 160px;
 }
-.newsroom-about-title {
+.newsroom-about-title, .podcast-title {
   color: var(--Accent-Teal, #00677f);
   font: 40px "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
@@ -2337,6 +2370,23 @@ color: #4A4A4A;
   height: 750px;
   margin-top: 70px;
   position: relative;
+}
+.def1 > img {
+  width: 320px;
+}
+.podcast-top {
+  font: 40px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 50px;
+  margin-top: 20px;
+  text-align: left;
+}
+.play-text {
+  font: 35px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: left;
+  color: rgba(231, 19, 22, 1);
 }
 }
 
