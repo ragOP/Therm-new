@@ -485,9 +485,10 @@ body{
  color: rgba(231, 19, 22, 1);
 }
 .press{
- height: 609px;
- margin-top: -10px;
+ height: auto;
+ margin-top: 10px;
  padding: 0px 100px;
+ margin-bottom: 60px;
 }
 .press-title {
  color: var(--Accent-Teal, #00677f);
@@ -556,7 +557,7 @@ body{
  color: #4A4A4A;
 }
 .inNews{
- height: 593px;
+ height: auto;
  padding: 50px 100px;
  margin-bottom: 100px;
  margin-top: -35px;
@@ -615,7 +616,7 @@ body{
 }
 
 .leadershipn-main{
- margin-top: 100px;
+ margin-top: 10px;
 }
 .leadershipn-top{
  height: auto;
@@ -770,9 +771,10 @@ body{
     height: 100%;
 }
 .newsletter{
- width: 1140px;
- height: 178px;
+ width: 100%;
+ height: auto;
  padding: 24px 24px 24px 32px;
+ margin: 0px 100px;
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -806,7 +808,7 @@ body{
  font-weight: 500;
 }
 .newsletter-text > input{
- width: 452px;
+ width: 70%;
  height: 35px;
  border-radius: 2px 0px 0px 0px;
  background-color: rgba(255, 255, 255, 1);
@@ -1427,9 +1429,10 @@ body{
      margin-top: -1px;
     }
     .press{
-     height: 609px;
-     margin-top: 100px;
+     height: auto;
+     margin-top: 40px;
      padding: 50px 100px;
+     margin-bottom: 60px;
     }
     .press-title {
      color: var(--Accent-Teal, #00677f);
@@ -1586,10 +1589,10 @@ body{
     margin-top: 10px;
    }
    .press{
-    
-            height: auto;
-    margin-top: 190px;
+    height: auto;
+    margin-top: 40px;
     padding: 0px;
+    margin-bottom: 60px;
    }
    .press-title {
     color: var(--Accent-Teal, #00677f);
@@ -2255,13 +2258,13 @@ color: #4A4A4A;
   color: rgba(231, 19, 22, 1);
 }
 .leadershipn-main {
-  margin-top: 225px;
+  margin-top: 10px;
 }
 .press-btn {
   margin-top: 200px;
 }
 .inNews{
-  margin-top: 140px;
+  margin-top: 50px;
 }
 .leadershipn-cover > img {
   width: 500px;
@@ -2321,6 +2324,25 @@ color: #4A4A4A;
 .Auhtor-and-Date{
   margin-top: 20px;
   font: 18px "Helvetica Neue LT W1G", Helvetica;
+}
+.newsletter-text-top {
+  font: 25px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+}
+.newsletter-tect-mid {
+  font: 20px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+}
+.email {
+  font: 18px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+  font-weight: 500;
 }
 }
 
@@ -2408,10 +2430,10 @@ color: #4A4A4A;
   margin-top: 385px;
 }
 .inNews {
-  height: 593px;
+  height: auto;
   padding: 50px 100px;
   margin-bottom: 100px;
-  margin-top: 275px;
+  margin-top: 40px;
 }
 .press-desc, .inNews-desc {
   font: 28px "Helvetica Neue LT W1G", Helvetica;
@@ -2429,7 +2451,7 @@ color: #4A4A4A;
   color: gray;
 }
 .leadershipn-main {
-  margin-top: 450px;
+  margin-top: 10px;
 }
 .leadershipn-cover > img {
   width: 700px;
@@ -2489,6 +2511,25 @@ color: #4A4A4A;
 .Auhtor-and-Date{
   margin-top: 20px;
   font: 22px "Helvetica Neue LT W1G", Helvetica;
+}
+.newsletter-text-top {
+  font: 30px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: left;
+}
+.newsletter-tect-mid {
+  font: 25px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+}
+.email {
+  font: 20px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  font-weight: 500;
 }
 }
 
@@ -2580,10 +2621,10 @@ color: #4A4A4A;
   color: rgba(231, 19, 22, 1);
 }
 .inNews {
-  height: 593px;
+  height: auto;
   padding: 50px 100px;
   margin-bottom: 100px;
-  margin-top: 500px;
+  margin-top: 40px;
 }
 .press-btn {
   margin-top: 560px;
@@ -2604,7 +2645,7 @@ color: #4A4A4A;
   color: gray;
 }
 .leadershipn-main {
-  margin-top: 650px;
+  margin-top: 10px;
 }
 .leadershipn-cover > img {
   width: 900px;
@@ -2664,6 +2705,25 @@ color: #4A4A4A;
 .Auhtor-and-Date{
   margin-top: 25px;
   font: 26px "Helvetica Neue LT W1G", Helvetica;
+}
+.newsletter-text-top {
+  font: 35px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: left;
+}
+.newsletter-tect-mid {
+  font: 30px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: left;
+}
+.email {
+  font: 23px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+  font-weight: 500;
 }
 }
 
