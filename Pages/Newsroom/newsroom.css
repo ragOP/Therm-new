@@ -8,7 +8,6 @@ body{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font: 14px "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
   background-color: #ffffff;
@@ -86,7 +85,7 @@ body{
   font-weight: 600;
 }  */
 .search-icon {
-  margin-right: 8px;
+  margin-right: 16px;
   cursor: pointer;
 }
 .button {
@@ -894,7 +893,7 @@ body{
 .with-background{
   background-color: #f5f5f5;
   padding: 80px 100px;
-  margin: 90px 0px;
+  margin: 0px;
 }
 
 .footer {
@@ -1060,6 +1059,11 @@ body{
    .footer{
      flex-wrap: wrap;
    }
+   .with-background{
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    margin: 0px;
+  }
    }
 
    @media (min-width: 525px) and (max-width: 830px) {
@@ -1683,6 +1687,7 @@ body{
     background-color: rgb(255 255 255);
     margin-bottom: 0px;
     margin-top: 5px;
+    margin: 0;
    }
    .newsletter-text{
     margin: 0px 10px;
@@ -2156,7 +2161,7 @@ color: #4A4A4A;
     content: url('../../Assets/Images/kaaa.png');
   }
 }
-@media only screen and (min-width: 850px) and (max-width: 1395px){
+@media only screen and (min-width: 850px) and (max-width: 1300px){
   .leadershipn-cover {
     display: flex;
     align-items: start;
@@ -2173,6 +2178,22 @@ color: #4A4A4A;
 }
 }
 @media only screen and (min-width: 1700px) {
+  .newsroom-about-about{
+    margin-top: -47px;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font: 14px "Helvetica Neue LT W1G", Helvetica;
+    font-style: normal;
+    background-color: #ffffff;
+    z-index: 1000;
+    height: 111px;
+}
   .newsroom-about-left-heading{
     font: 70px "Helvetica Neue LT W1G", Helvetica;
     line-height: 80px;
@@ -2191,7 +2212,7 @@ color: #4A4A4A;
     margin-top: 50px;
   }
   .newsroom-about {
-    margin-top: 128px;
+    margin-top: 162px;
     padding: 0 120px;
 }
 .newsroom-about-title, .podcast-title, .inNews-title, .leadershipn-title, .main-media-title{
@@ -2344,9 +2365,79 @@ color: #4A4A4A;
   text-align: left;
   font-weight: 500;
 }
+.inNews-badge {
+  background-color: rgba(234, 118, 0, 1);
+  width: 100%;
+  display: inline;
+  padding: 4px 12px 4px 12px;
+  border-radius: 2px 0px 0px 0px;
+  font: 22px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  color: #fff;
+}
+.navlogo > img {
+  height: 140%;
+}
+.menu ul a {
+  margin-right: 25px;
+  cursor: pointer;
+  color: #222;
+  text-decoration: none;
+  font: 20px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.dropdown {
+  position: fixed;
+  top: 112px;
+  background-color: #fff;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  z-index: 10000;
+  margin-left: -8px;
+}
+.button {
+  background-color: #ccc;
+  border: none;
+  padding: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+  position: relative;
+  color: #fff;
+  transition: right 0.3s ease, opacity 0.3s ease;
+  width: 200px;
+  background: linear-gradient(to left, #ccc 50%, red 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+.button > a {
+  font: 17px "Helvetica Neue LT W1G", Helvetica;
+}
 }
 
 @media only screen and (min-width: 2400px) {
+  .newsroom-about-about{
+    margin-top: -109px;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font: 14px "Helvetica Neue LT W1G", Helvetica;
+    font-style: normal;
+    background-color: #ffffff;
+    z-index: 1000;
+    height: 134px;
+}
   .newsroom-about-left-heading{
     font: 90px "Helvetica Neue LT W1G", Helvetica;
     line-height: 100px;
@@ -2365,7 +2456,7 @@ color: #4A4A4A;
     margin-top: 50px;
   }
   .newsroom-about {
-    margin-top: 128px;
+    margin-top: 200px;
     padding: 0 140px;
 }
 .newsroom-about-title, .podcast-title, .inNews-title, .leadershipn-title,.main-media-title {
@@ -2531,10 +2622,71 @@ color: #4A4A4A;
   text-align: left;
   font-weight: 500;
 }
+.inNews-badge {
+  background-color: rgba(234, 118, 0, 1);
+  width: 100%;
+  display: inline;
+  padding: 4px 12px 4px 12px;
+  border-radius: 2px 0px 0px 0px;
+  font: 29px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 39px;
+  text-align: left;
+  color: #fff;
 }
-
-
+.navlogo > img {
+  height: 170%;
+}
+.menu ul a {
+  margin-right: 35px;
+  cursor: pointer;
+  color: #222;
+  text-decoration: none;
+  font: 24px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.dropdown {
+  position: fixed;
+  top: 135px;
+  background-color: #fff;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  z-index: 10000;
+  margin-left: -8px;
+}
+.search-icon > img {
+  width: 23px;
+} 
+.search-icon {
+  margin-right: 30px;
+}
+.button {
+  background-color: #ccc;
+  border: none;
+  padding: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+  position: relative;
+  color: #fff;
+  transition: right 0.3s ease, opacity 0.3s ease;
+  width: 200px;
+  background: linear-gradient(to left, #ccc 50%, red 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+.button > a {
+  font: 19px "Helvetica Neue LT W1G", Helvetica;
+}
+}
 @media only screen and (min-width: 2900px) {
+  .newsroom-about-about{
+    margin-top: -121px;
+  }
   .newsroom-about-left-heading{
     font: 130px "Helvetica Neue LT W1G", Helvetica;
     line-height: 140px;
@@ -2553,7 +2705,7 @@ color: #4A4A4A;
     margin-top: 50px;
   }
   .newsroom-about {
-    margin-top: 128px;
+    margin-top: 225px;
     padding: 0 160px;
 }
 .newsroom-about-title, .podcast-title, .inNews-title, .leadershipn-title, .main-media-title{
@@ -2725,6 +2877,114 @@ color: #4A4A4A;
   text-align: left;
   font-weight: 500;
 }
+.inNews-badge {
+  background-color: rgba(234, 118, 0, 1);
+  width: 100%;
+  display: inline;
+  padding: 4px 12px 4px 12px;
+  border-radius: 2px 0px 0px 0px;
+  font: 29px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 39px;
+  text-align: left;
+  color: #fff;
 }
+.menu ul a {
+  margin-right: 43px;
+  cursor: pointer;
+  color: #222;
+  text-decoration: none;
+  font: 28px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.navlogo > img {
+  height: 200%;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font: 14px "Helvetica Neue LT W1G", Helvetica;
+  font-style: normal;
+  background-color: #ffffff;
+  z-index: 1000;
+  height: 161px;
+}
+.search-icon > img {
+  width: 27px;
+}
+.search-icon {
+  margin-right: 40px;
+}
+.button {
+  background-color: #ccc;
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+  position: relative;
+  color: #fff;
+  transition: right 0.3s ease, opacity 0.3s ease;
+  width: 300px;
+  background: linear-gradient(to left, #ccc 50%, red 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+.button > a {
+  font: 24px "Helvetica Neue LT W1G", Helvetica;
+}
+.dropdown {
+  position: fixed;
+  top: 160px;
+  background-color: #fff;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  z-index: 10000;
+  margin-left: -8px;
+}
+}
+.dd {
+  position: relative;
+}
+
+.dd > p {
+  position: relative;
+  top: -74px;
+  left: 79px;
+  font: 16px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dd > p::after {
+  content: '→';
+  display: inline-block;
+  opacity: 0;
+  margin-left: -20px;
+  font-size: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  left: -10px;
+}
+
+.dd > p:hover::after {
+  opacity: 1;
+  margin-left: 10px;
+  left: 0;
+}
+
 
 
