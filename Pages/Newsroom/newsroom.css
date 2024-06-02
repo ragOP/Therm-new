@@ -2985,6 +2985,18 @@ color: #4A4A4A;
   margin-left: 10px;
   left: 0;
 }
-
+.round {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  cursor: pointer;
+}
+.round:hover {
+  background-color: red;
+}
 
 
