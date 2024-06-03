@@ -175,6 +175,7 @@
           </button>
         </div>
       </div>
+      <div id="blur-overlay"></div>
       <div id="dropdown" class="dropdown">
         <div class="dropdown-left">
           <div class="dropdown-left-img">
@@ -1244,6 +1245,28 @@
 
       // Listen for window resize events
       window.addEventListener("resize", updateText);
+    </script>
+    <script>
+      let toggle = true;
+      const newsroomLink = document.getElementById("newsroom-link");
+      const dropdown5 = document.getElementById("dropdown");
+      const blurOverlay = document.getElementById("blur-overlay");
+
+      function toggleDropdown() {
+        if (toggle) {
+          dropdown5.style.display = "none";
+          blurOverlay.style.display = "none";
+          toggle = false;
+        } else {
+          dropdown5.style.display = "block";
+          blurOverlay.style.display = "block";
+          toggle = true;
+        }
+      }
+
+      newsroomLink.addEventListener("click", function () {
+        toggleDropdown();
+      });
     </script>
   </body>
 </html>
