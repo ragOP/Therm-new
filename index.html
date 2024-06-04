@@ -6,8 +6,8 @@
   <title>Home</title>
   <link rel="stylesheet" href="Home.css">
 </head>
-<body>
-  <div class="navbar">
+<body style="margin: 0;">
+  <!-- <div class="navbar">
     <a href="/Pages/HomePage/Home.html">
       <div class="navlogo">
         <img id="logo" src="../../Assets/Images/logo.png" alt="">
@@ -40,7 +40,7 @@
         <img class="link-img" src="../../Assets/Images/external-link.png" alt="">
       </button>
     </div>
-  </div>
+  </div> -->
   <div class="hero">
     <div class="video-container">
       <video autoPlay loop muted class="video-background">
@@ -120,7 +120,7 @@
             <br>
             Impact investment to support Black businesses and communities.
           </p>
-          <img src="../../Assets/Images/csr2.svg" alt="">
+          <img class="csr2" src="../../Assets/Images/csr2.svg" alt="">
         </div>
         <div class="button-mission" style="width: 192px; margin-top: 30px; text-transform: uppercase;">
           <img src="../../Assets/Images/redsmall.svg" alt="">
@@ -241,6 +241,70 @@
         <img src="../../Assets/Images/stock.png" alt="Career Image" />
       </div>
     </div>
+    <div class="career-mob">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <div class="inNews-single">
+              <!-- <p class="inNews-badge">The Washington Post</p> -->
+              <img src="../../Assets/Images/stock.png" alt="" />
+              <div class="carrer-text">
+                <p class="text">
+                  <span>Work in an inclusive global environment</span> that values the
+                  power of diverse talent, background and experiences
+                </p>
+              </div>
+              <p class="c-btn">READ MORE</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="inNews-single">
+              <!-- <p class="inNews-badge">Business Insider</p> -->
+              <img src="../../Assets/Images/stock.png" alt="" />
+              <!-- <p class="inNews-date">January 5th, 2021</p>
+              <p class="inNews-desc">
+                A middle-schooler just won $25,000 for inventing a fire-detection
+                device that works faster than the average smoke detector
+              </p>
+              <p class="c-btn">READ MORE</p> -->
+              <div class="carrer-text">
+                <p class="text">
+                  <span>Work in an inclusive global environment</span> that values the
+                  power of diverse talent, background and experiences
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="inNews-single">
+              <!-- <p class="inNews-badge">Time</p> -->
+              <img src="../../Assets/Images/stock.png" alt="" />
+              <!-- <p class="inNews-date">January 5th, 2021</p>
+              <p class="inNews-desc">
+                A More Accurate Diagnosis Thermo Fisher Scientific Preeclampsia
+                Blood Tests
+              </p> -->
+              <div class="carrer-text">
+                <p class="text">
+                  <span>Work in an inclusive global environment</span> that values the
+                  power of diverse talent, background and experiences
+                </p>
+              </div>
+              <p class="c-btn">READ MORE</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots"></div>
+        <p class="c-btn">
+          <div class="button-mission" style="width: 292px;">
+            <img src="../../Assets/Images/redsmall.svg" alt="Dot" />
+            <p class="button-text" style="cursor: pointer; width: 242px;">
+              EXPLORE OPPORTUNITIES
+            </p>
+          </div>
+        </p>
+      </div>
+    </div>
   </div>
   <div class="containermain">
     <p class="title">Diversity & Inclusion</p>
@@ -277,7 +341,9 @@
           Our President & CEO, Marc Casper, talks with Jim Cramer of “Mad
           Money” about the future of gene therapy upon the recent acquisition
           of Brammer Bio and the importance of precisions medicine to Thermo
-          Fisher Scientific’s growth strategy.<br /><br /><br /><br />
+          Fisher Scientific’s growth strategy.
+        </p>
+        <p>
           Thermo Fisher Scientific | Fri, 03 Feb 2023
         </p>
       </div>
@@ -287,9 +353,9 @@
           @thermofisher As we get ready to celebrate Earth Day this Saturday,
           April 22nd, we will share throughout the week, the many ways our
           colleagues around the globe are working to reduce our impact on the
-          environment and help secure a more socially.<br /><br /><br /><br />
-          Thermo Fisher Scientific | Fri, 03 Feb 2023
+          environment and help secure a more socially.
         </p>
+        <p>Thermo Fisher Scientific | Fri, 03 Feb 2023</p>
       </div>
       <div class="leftdiv">
         <img src="../../Assets/Images/facebook.svg" alt="Facebook Logo" class="logo" />
@@ -297,9 +363,10 @@
           Our President & CEO, Marc Casper, talks with Jim Cramer of “Mad
           Money” about the future of gene therapy upon the recent acquisition
           of Brammer Bio and the importance of precisions medicine to Thermo
-          Fisher Scientific’s growth strategy. <br /><br /><br /><br />
-          Thermo Fisher Scientific | Fri, 03 Feb 2023
+          Fisher Scientific’s growth strategy. 
+          
         </p>
+        <p>Thermo Fisher Scientific | Fri, 03 Feb 2023</p>
       </div>
     </div>
   </div>
@@ -378,6 +445,201 @@
     <p class="pre-footer-second">Terms & Conditions</p>
     <p class="pre-footer-third">Privacy Information Center</p>
   </div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
+  <script>
+    let currentIndex = 0;
+
+    function moveCarousel(direction) {
+      const carouselInner = document.querySelector(".carousel-inner");
+      const items = document.querySelectorAll(".carousel-item");
+      const totalItems = items.length;
+
+      currentIndex += direction;
+
+      if (currentIndex < 0) {
+        currentIndex = totalItems - 1;
+      } else if (currentIndex >= totalItems) {
+        currentIndex = 0;
+      }
+
+      const offset = -currentIndex * 93;
+      carouselInner.style.transform = `translateX(${offset}%)`;
+
+      updateDots();
+    }
+
+    function autoMoveCarousel() {
+      if (window.innerWidth < 768) {
+        moveCarousel(1);
+      }
+    }
+
+    function createDots() {
+      const carouselDots = document.querySelector(".carousel-dots");
+      const items = document.querySelectorAll(".carousel-item");
+      items.forEach((_, index) => {
+        const dot = document.createElement("div");
+        dot.classList.add("carousel-dot");
+        dot.addEventListener("click", () => moveToSlide(index));
+        carouselDots.appendChild(dot);
+      });
+    }
+
+    function updateDots() {
+      const dots = document.querySelectorAll(".carousel-dot");
+      dots.forEach((dot, index) => {
+        if (index === currentIndex) {
+          dot.classList.add("active");
+        } else {
+          dot.classList.remove("active");
+        }
+      });
+    }
+
+    function moveToSlide(index) {
+      currentIndex = index;
+      const offset = -currentIndex * 93;
+      const carouselInner = document.querySelector(".carousel-inner");
+      carouselInner.style.transform = `translateX(${offset}%)`;
+      updateDots();
+    }
+
+    window.addEventListener("load", () => {
+      createDots();
+      updateDots();
+      setInterval(autoMoveCarousel, 3000);
+    });
+
+    let currentIndexPress1 = 0;
+
+    function moveCarousel1(direction) {
+      const carouselInner1 = document.querySelector(".carousel1-inner");
+      const items1 = document.querySelectorAll(".carousel1-item");
+      const totalItems1 = items1.length;
+
+      currentIndexPress1 += direction;
+      if (currentIndexPress1 < 0) {
+        currentIndexPress1 = totalItems1 - 1;
+      } else if (currentIndexPress1 >= totalItems1) {
+        currentIndexPress1 = 0;
+      }
+      const offset1 = -currentIndexPress1 * 93;
+      carouselInner1.style.transform = `translateX(${offset1}%)`;
+
+      updateDots1();
+    }
+
+    function autoMoveCarouselPress1() {
+      if (window.innerWidth < 768) {
+        moveCarousel1(1);
+      }
+    }
+
+    function createDots1() {
+      const carouselDots = document.querySelector(".carousel1-dots");
+      const items1 = document.querySelectorAll(".carousel1-item");
+      items1.forEach((_, index) => {
+        const dot = document.createElement("div");
+        dot.classList.add("carousel1-dot");
+        dot.addEventListener("click", () => moveToSlide1(index));
+        carouselDots.appendChild(dot);
+      });
+    }
+
+    function updateDots1() {
+      const dots = document.querySelectorAll(".carousel1-dot");
+      dots.forEach((dot, index) => {
+        if (index === currentIndexPress1) {
+          dot.classList.add("active");
+        } else {
+          dot.classList.remove("active");
+        }
+      });
+    }
+
+    function moveToSlide1(index) {
+      currentIndexPress1 = index;
+      const offset1 = -currentIndexPress1 * 93;
+      const carouselInner1 = document.querySelector(".carousel1-inner");
+      carouselInner1.style.transform = `translateX(${offset1}%)`;
+      updateDots1();
+    }
+
+    window.addEventListener("load", () => {
+      createDots1();
+      updateDots1();
+      setInterval(autoMoveCarouselPress1, 5000);
+    });
+
+    let currentIndex2 = 0;
+
+    function moveCarousel2(direction) {
+      const carouselInner2 = document.querySelector(".carousel2-inner");
+      const items2 = document.querySelectorAll(".leadershipn-bottom-single");
+      const totalItems2 = items2.length;
+
+      currentIndex2 += direction;
+
+      if (currentIndex2 < 0) {
+        currentIndex2 = totalItems2 - 1;
+      } else if (currentIndex2 >= totalItems2) {
+        currentIndex2 = 0;
+      }
+      const offset2 = -currentIndex2 * 80;
+      carouselInner2.style.transform = `translateX(${offset2}%)`;
+    }
+    function autoMoveCarousel2() {
+      if (window.innerWidth < 768) {
+        moveCarousel2(1);
+      }
+    }
+    window.addEventListener("load", () => {
+      setInterval(autoMoveCarousel2, 2000);
+    });
+
+    let currentIndex3 = 0;
+
+    function moveCarousel3(direction) {
+      const carouselInner3 = document.querySelector(".carousel3-inner");
+      const items3 = document.querySelectorAll(".leadership-bottom-single");
+      const totalItems3 = items3.length;
+
+      currentIndex3 += direction;
+
+      if (currentIndex3 < 0) {
+        currentIndex3 = totalItems3 - 1;
+      } else if (currentIndex3 >= totalItems3) {
+        currentIndex3 = 0;
+      }
+
+      const offset3 = -currentIndex3 * 80;
+      carouselInner3.style.transform = `translateX(${offset3}%)`;
+    }
+
+    function autoMoveCarousel3() {
+      if (window.innerWidth < 768) {
+        moveCarousel3(1);
+      }
+    }
+
+    window.addEventListener("load", () => {
+      setInterval(autoMoveCarousel3, 3000);
+    });
+  </script>
+  <script>
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+  </script>
 </body>
 </html>
