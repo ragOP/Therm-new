@@ -85,7 +85,7 @@ body{
   font-weight: 600;
 }  */
 .search-icon {
-  margin-right: 16px;
+  margin-right: 20px;
   cursor: pointer;
 }
 .button {
@@ -482,6 +482,7 @@ body{
  line-height: 22px;
  text-align: left;
  color: rgba(231, 19, 22, 1);
+ margin-right: 10px;
 }
 .press{
  height: auto;
@@ -554,6 +555,12 @@ body{
  letter-spacing: 0.04em;
  text-align: left;
  color: #4A4A4A;
+}
+.iconss > a {
+  margin-right: 10px;
+}
+.iconss{
+  margin-right: 100px;
 }
 .inNews{
  height: auto;
@@ -635,7 +642,7 @@ body{
  align-items: start;
  gap: 30px;
  color: rgba(255, 255, 255, 1);
- margin-top: 50px;
+ margin-top: 20px;
  background-color: rgba(39,46,61,255);
 }
 .leadershipn-right{
@@ -671,7 +678,7 @@ body{
  align-items: center;
  justify-content: center;
  flex-direction: column;
- margin-top: 50px;
+ margin-top: 30px;
  background-color: rgba(166, 25, 46, 1);
  padding: 15px;
 }
@@ -806,7 +813,7 @@ body{
  text-align: left;
  font-weight: 500;
 }
-.newsletter-text > input{
+input{
  width: 70%;
  height: 35px;
  border-radius: 2px 0px 0px 0px;
@@ -816,7 +823,7 @@ body{
  margin-top: 15px;
  padding: 10px;
 }
-.newsletter-text > input::placeholder{
+input::placeholder{
  font: 14px "Helvetica Neue LT W1G", Helvetica;
  font-weight: 400;
  line-height: 22px;
@@ -838,6 +845,7 @@ body{
   text-transform: uppercase;
   white-space: nowrap;
   margin-bottom: 50px;
+  margin-top: 50px;
   /* margin-left: 110px; */
 }
 .container {
@@ -1070,6 +1078,9 @@ body{
     color: gray;
    }
   @media only screen and (max-width: 850px) {
+    .iconss{
+      margin-right: 10px !important;
+    }
     .newsletter-img{
   width: 100%;
       display: flex;
@@ -1219,6 +1230,17 @@ body{
       }
     }
   }
+
+  @media only screen and (min-width: 300px) and (max-width: 380px) {
+    .def1{
+      width: 43% !important;
+      padding-left: 10px !important;
+    }
+    .c-para{
+      width: 310px !important;
+    }
+  }
+
 
    @media only screen and (max-width: 850px) {
     .footer-first {
@@ -1456,6 +1478,7 @@ body{
      text-align: left;
      color: rgba(231, 19, 22, 1);
      margin-top: -1px;
+     margin-right: 10px;
     }
     .press{
      height: auto;
@@ -1545,7 +1568,7 @@ body{
 .leadershipn-cover{
  flex-direction: column;
  align-items: normal;
- padding: 10px 15px;
+ padding: 15px 15px;
 }
 .leadership-cover-bottom {
  padding: 0px;
@@ -1555,7 +1578,7 @@ body{
 .leadershipn-title {
  padding: 15px;
  padding-top: 40px;
- font: 14px "Helvetica Neue LT W1G", Helvetica;
+ font: 18px "Helvetica Neue LT W1G", Helvetica;
  font-weight: 700;
  margin-top: 50px;
 }
@@ -1732,19 +1755,19 @@ body{
     font: 14px "Helvetica Neue LT W1G", Helvetica;
     font-weight: 500;
    }
-   .newsletter-text > input {
-    width: 175px;
+   input {
+    width: 275px;
         height: 35px;
     border-radius: 2px 0px 0px 0px;
     background-color: rgb(255 255 255);;
-  border: none;
-  outline: none;
+  border: 0.1px solid gray;
+  outline: #00000040;
   margin-top: -8px;
   margin-left: 20px;
-  padding: 10px;
+  padding: 5px;
 }
 @media only screen and (max-width: 850px) {
-  .newsletter-text > input::placeholder{
+  input::placeholder{
     color: #222222;
     font: 14px "Helvetica Neue LT W1G", Helvetica;
   }
@@ -2188,7 +2211,12 @@ color: #4A4A4A;
     content: url('../../Assets/Images/kaaa.png');
   }
 }
-@media only screen and (min-width: 850px) and (max-width: 1300px){
+@media only screen and (min-width: 1200px) and (max-width: 1300px){
+  .leadershipn-btn{
+    margin-top: 23px !important;
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 1200px){
   .leadershipn-cover {
     display: flex;
     align-items: start;

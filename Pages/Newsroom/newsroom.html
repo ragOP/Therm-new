@@ -428,7 +428,7 @@
           </p>
         </div>
         <div class="press-single">
-          <img src="../../Assets/Images/press2.png" alt="" />
+          <img src="../../Assets/Images/press3.png" alt="" />
           <p class="press-date">January 5th, 2023</p>
           <p class="press-desc">
             Thermo Fisher Scientific & Flagship Pioneering Expand Ongoing
@@ -437,7 +437,7 @@
           </p>
         </div>
         <div class="press-single">
-          <img src="../../Assets/Images/press3.png" alt="" />
+          <img src="../../Assets/Images/press2.png" alt="" />
           <p class="press-date">January 5th, 2023</p>
           <p class="press-desc">
             Thermo Fisher Scientific Authorizes $4 Billion of Share Repurchases
@@ -464,7 +464,7 @@
         </div>
         <div class="carousel1-item">
           <div class="press-single">
-            <img src="../../Assets/Images/press2.png" alt="" />
+            <img src="../../Assets/Images/press3.png" alt="" />
             <p class="press-date">January 5th, 2023</p>
             <p class="press-desc">
               Thermo Fisher Scientific & Flagship Pioneering Expand Ongoing
@@ -475,7 +475,7 @@
         </div>
         <div class="carousel1-item">
           <div class="press-single">
-            <img src="../../Assets/Images/press3.png" alt="" />
+            <img src="../../Assets/Images/press2.png" alt="" />
             <p class="press-date">January 5th, 2023</p>
             <p class="press-desc">
               Thermo Fisher Scientific Authorizes $4 Billion of Share
@@ -570,7 +570,7 @@
         </div>
       </div>
       <div class="carousel-dots"></div>
-      <p class="c-btn" style="margin-left: 4px">View All News</p>
+      <p class="c-btn" style="margin-left: 5px">View All News</p>
     </div>
     <div class="leadershipn-main">
       <div class="leadershipn-top">
@@ -752,7 +752,43 @@
     </div>
     <div class="socials">
       <p>Follow us on</p>
-      <img src="../../Assets/Images/socials.png" alt="" />
+      <div class="iconss">
+        <a
+          href="https://www.linkedin.com/company/thermo-fisher-scientific/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../../Assets/Images/11.png" alt="LinkedIn" />
+        </a>
+        <a
+          href="https://youtube.com/thermofisher"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../../Assets/Images/13.png" alt="YouTube" />
+        </a>
+        <a
+          href="https://www.instagram.com/thermofisherscientific/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../../Assets/Images/15.png" alt="Instagram" />
+        </a>
+        <a
+          href="https://twitter.com/thermofisher"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../../Assets/Images/12.png" alt="Twitter" />
+        </a>
+        <a
+          href="https://www.facebook.com/thermofisher/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../../Assets/Images/14.png" alt="Facebook" />
+        </a>
+      </div>
     </div>
     <div class="cnter">
       <div class="newsletter">
@@ -764,7 +800,9 @@
           </p>
           <p class="email">Email ID</p>
           <!-- <input type="email" /> -->
-          <input type="email" id="email" name="email" required>
+          <form>
+            <input type="email" id="email" name="email" required />
+          </form>
         </div>
         <div class="newsletter-img">
           <div class="dd">
@@ -1088,7 +1126,7 @@
       }
 
       function autoMoveCarousel3() {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 850) {
           moveCarousel3(1);
         } else {
           resetCarousel3();
@@ -1174,7 +1212,7 @@
       window.addEventListener("load", () => {
         createDots4();
         updateDots4();
-        setInterval(autoMoveCarousel4, 2000);
+        setInterval(autoMoveCarousel4, 5000);
       });
       let currentIndex5 = 0;
 
