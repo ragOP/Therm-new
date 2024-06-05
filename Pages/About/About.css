@@ -599,15 +599,19 @@ body{
   width: 100%;
   height: 216px;
 }
+  
+          
 .banner-logos {
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  /* width: 100%; */
+  width: 100%;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 30px;
-  margin-bottom: 30px;
-  padding-left: 70px;
+  margin: 0px;
+  padding: 0px;
+  margin: 100px;
+  height: auto;
 }
 .banner-right-text {
   position: absolute;
@@ -628,8 +632,8 @@ body{
   height: 40.8px;
 }
 .logo-single {
-  width: 23%;
-  height: 353px;
+  width: 31%;
+  height: auto;
   background-color: #f5f5f5;
   padding: 30px 50px;
   position: relative;
@@ -1123,12 +1127,14 @@ body{
   line-height: 30px;
   text-align: center;
  }
- .mainn-banner{
+
+ .mainn-banner {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
- }
+  height: auto;
+}
 @media only screen and (max-width: 850px) {
   .main-about {
     width: 100%;
@@ -1462,6 +1468,10 @@ body{
   transition: all 0.3s ease;
 }
 
+.deff {
+  flex-wrap: wrap !important;
+  padding: 10px 40px !important;
+}
 .logo-single:hover {
   color: #fff;
   padding: 20px 40px;
@@ -1998,5 +2008,49 @@ padding-top: 5px;
   width: 100%;
   height:auto;
   object-fit: cover;
+}
+}
+
+
+.deff {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+@media only screen and (min-width: 2900px) {
+  .logo-single > img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+    width: 234px;
+    height: 126px;
+  }
+  .brand-description{
+    font: 40px "Helvetica Neue LT W1G", Helvetica;
+    font-weight: 500;
+    line-height: 41px;
+    text-align: left;
+    margin-top: 170px;
+}
+.logo-single:hover .brand-name .custom-description::before {
+  content: attr(data-description);
+  display: block;
+  font-weight: bold;
+  font: 40px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: left;
+  margin-top: 10px;
+}
+.logo-single:hover img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(100deg);
+  margin-bottom: 10px;
+  transform: scale(0.9);
+  margin-left: -9px;
 }
 }
