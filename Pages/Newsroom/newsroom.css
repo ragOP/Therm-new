@@ -722,12 +722,14 @@ body{
  width: 392px;
  height: 175.78px;
  background-color: rgba(245, 245, 245, 1);
- padding: 20px;
+ padding: 25px; 
+ 
 }
 .percentage{
  font: 30px "Helvetica Neue LT W1G", Helvetica;
+ 
  font-weight: 600;
- line-height: 40px;
+ line-height: 40px;  
  text-align: left;
 }
 .percentage-desc{
@@ -735,10 +737,11 @@ body{
  font-weight: 400;
  line-height: 24px;
  text-align: left;
- margin-top: 10px;
+ margin-top: -20px;
 }
 .leadership-bottom-single{
  width: auto;
+ margin-top: -20px;
  height: 176px;
  border-radius: 4px 0px 0px 0px;
  background-color: #e8f5f7;
@@ -1086,7 +1089,7 @@ input::placeholder{
       display: flex;
       align-items: center;
       justify-content: end;
-      margin-right: -71px;
+      /* margin-right: -71px; */
 
 }
    .footer-first{
@@ -1763,7 +1766,7 @@ input::placeholder{
   border: 0.1px solid gray;
   outline: #00000040;
   margin-top: -8px;
-  margin-left: 20px;
+  margin-left: 11px;
   padding: 5px;
 }
 @media only screen and (max-width: 850px) {
