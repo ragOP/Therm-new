@@ -1820,6 +1820,9 @@ padding-top: 20px;
 @media only screen and (min-width: 2900px) {
   .main-about .description, .mission-about-titile {
     font: 49px "Helvetica Neue LT W1G", Helvetica;
+    font: 45px "Helvetica Neue LT W1G", Helvetica;
+    font-weight: 700;
+    line-height: 38px;
     color: #00677f;
     font-style: normal;
     font-weight: 700;
@@ -1860,14 +1863,16 @@ padding-top: 20px;
 
 .mission-top {
   font: 75px "Helvetica Neue LT W1G", Helvetica;
+  font: 50px "Helvetica Neue LT W1G", Helvetica;
   font-weight: 500;
-  line-height: 35px;
+  line-height: 60px;
   text-align: left;
   color: #a6192e;
 }
 
 .mission-second{
   font: 88px "Helvetica Neue LT W1G", Helvetica;
+  font: 60px "Helvetica Neue LT W1G", Helvetica;
 }
 .mission-second > span {
 font: 88px "Helvetica Neue LT W1G", Helvetica;

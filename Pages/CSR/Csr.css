@@ -1,6 +1,9 @@
 body{
   font-family: "Helvetica Neue LT W1G", Helvetica;
 }
+.single-highlight{
+  width: 25%;
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -469,7 +472,7 @@ body{
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0.1em;
-  padding-left: 100px;
+  padding-left: 5%;
   text-align: left;
   color: #00677f;
   margin-bottom: 60px;
@@ -479,7 +482,7 @@ body{
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding: 0px 100px;
+  padding: 0px 5%;
 }
 .single-highlight > img {
   width: 100%;
@@ -532,8 +535,8 @@ body{
   align-items: center;
   /* justify-content: center; */
   flex-direction: column;
-  width: 310px;
-  height: 396px;
+  /* width: 310px;
+  height: 396px; */
   padding: 32px 0px 32px 0px;
 }
 .framework-single > img {
@@ -843,7 +846,7 @@ body{
   line-height: 22px;
   letter-spacing: 1.8px;
   text-transform: uppercase;
-  padding: 48px 100px;
+  padding: 48px 5%;
   white-space: nowrap;
 }
 .enviroment-main {
@@ -1430,6 +1433,9 @@ body{
 @media only screen and (max-width: 767px) {
   .diversity-main{
     display: block;
+  }
+  .csr-left p{
+    margin: 0;
   }
   .csr-desc{
    gap: 0; 
