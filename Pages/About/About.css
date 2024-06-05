@@ -1872,7 +1872,6 @@ padding-top: 20px;
 
 .mission-second{
   font: 88px "Helvetica Neue LT W1G", Helvetica;
-  font: 60px "Helvetica Neue LT W1G", Helvetica;
 }
 .mission-second > span {
 font: 88px "Helvetica Neue LT W1G", Helvetica;
@@ -1883,9 +1882,9 @@ color: #222222;
 padding-top: 10px;
 }
 .mission-third {
-font: 60px "Helvetica Neue LT W1G", Helvetica;
+font: 30px "Helvetica Neue LT W1G", Helvetica;
 font-weight: 700;
-line-height: 90px;
+line-height: 40px;
 text-align: left;
 padding-top: 5px;
 }
@@ -1900,9 +1899,9 @@ padding-top: 5px;
   object-fit: cover;
 }
 .mission-last {
-font: 60px "Helvetica Neue LT W1G", Helvetica;
+font: 30px "Helvetica Neue LT W1G", Helvetica;
 font-weight: 400;
-line-height: 90px;
+line-height: 40px;
 text-align: left;
 padding-top: 20px;
 }
