@@ -43,10 +43,13 @@
       top: 0;
       padding: 10px 20px;
       z-index: 12;
-      display: flex;
       align-items: center;
     }
-    
+    #myLinks>li {
+    border-bottom: 3px solid #9f9f9f;
+}
+
+
     .topnav #myLinks {
       display: none;
     }
@@ -82,166 +85,182 @@
 </head>
 <body style="margin: 0;">
   <div class="mobile-container">
-
     <!-- Top Navigation Menu -->
     <div class="topnav">
       <a href="#home">
         <div class="navlogo mob">
-        <img id="logo" src="../../Assets/Images/mob-tf-logo.png" alt="">
-      </div></a>
+          <img
+            id="logo"
+            src="../../Assets/Images/mob-tf-logo.png"
+            alt=""
+          /></div
+      ></a>
       <ul id="myLinks">
-        <li class="dropdown-btn" href="#news">About</li>
+        <li class="dropdown-btn mob-dropdown" href="#news">
+          <img src="../../Assets/Images/Icon1.png" alt="" /> <span>About</span>
+        </li>
         <ul class="dropdown-container">
           <li href="#">Link 1</li>
           <li href="#">Link 2</li>
           <li href="#">Link 3</li>
         </ul>
-        <li href="#contact">Corporate Social Responsibility</li>
-        <li href="#about">Investors</li>
-        <li>Newsroom</li>
-        <li>Careers</li>
+        <li class="mob-dropdown" href="#contact">
+          <img src="../../Assets/Images/Icon1.png" alt="" /> <span> Corporate Social Responsibility</span>
+        </li>
+        <li class="mob-dropdown" href="#about"> <img src="../../Assets/Images/Icon1.png" alt="" /> <span>Investors</span> </li>
+        <li class="mob-dropdown"><img src="../../Assets/Images/Icon1.png" alt="" /> <span>Newsroom</span> </li>
+        <li class="mob-dropdown"><img src="../../Assets/Images/Icon1.png" alt="" /> <span>Careers</span> </li>
       </ul>
       <a href="javascript:void(0);" class="icon" onclick="myFunction(this)">
-        <div class="menubar" >
+        <div class="menubar">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
       </a>
-    </div> 
+    </div>
     <!-- End smartphone / tablet look -->
   </div>
-    
-<script>
+  <script>
     function myFunction(y) {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+      y.classList.toggle("change");
     }
-    y.classList.toggle("change");
-    }
-</script>
-<div class="desk-nav">
-  <div class="navbar">
-    <a href="/Pages/HomePage/Home.html">
-      <div class="navlogo">
-        <img id="logo" src="../../Assets/Images/logo.png" alt="">
-      </div>
-    </a>
-    <div class="menulinks">
-      <div class="menu">
-        <ul>
-          <li id="about-menu-item" class="">
-            <a id="about-link" class="" href="../About.html">ABOUT</a>
-          </li>
-          <li id="csr-menu-item" class="">
-            <a id="csr-link" class="" href="javascript:void(0)">CORPORATE SOCIAL RESPONSIBILITY</a>
-          </li>
-          <li id="investor-menu-item" class="">
-            <a id="investor-link" class="" href="../CSR/Csr.html">INVESTOR</a>
-          </li>
-          <li id="newsroom-menu-item" class="">
-            <a id="newsroom-link" class="" href="../Newsroom/newsroom.html">NEWSROOM</a>
-          </li>
-          <li id="career-menu-item" class="">
-            <a id="career-link" class="" href="/career">CAREER</a>
-          </li>
-        </ul>
-      </div>
-      <div class="search-icon">
-        <img src="../../Assets/Images/Search.png" alt="">
-      </div>
-      <button class="button">Thermofisher.com
-        <img class="link-img" src="../../Assets/Images/external-link.png" alt="">
-      </button>
-    </div>
-  </div>
-  <div id="dropdown"  class="dropdown">
-    <div class="dropdown-left">
-      <div class="dropdown-left-img">
-        <img src="../../Assets/Images/ss.svg" alt=""  style="max-width: 100%;" />
-      </div>
-      <div class="dropdown-left-top">
-        <img src="../../Assets/Images/dropa.svg" alt="" />
-        <p class="dropdown-top-text">Our Mission</p>
-      </div>
-      <p class="dropdown-left-mid">
-        Everything we do starts with our Mission: to <br /> enable our
-        customers to make the world <br />
-        <span>healthier, cleaner, and safer.</span>
-      </p>
-      <div class="dropdown-left-bottom">
-        <img src="../../Assets/Images/dropd.svg" alt="" />
-        <p class="bottom-text">Read More</p>
+  </script>
+  <div class="desk-nav">
+    <div class="navbar">
+      <a href="/Pages/HomePage/Home.html">
+        <div class="navlogo">
+          <img id="logo" src="../../Assets/Images/logo.png" alt="" />
+        </div>
+      </a>
+      <div class="menulinks">
+        <div class="menu">
+          <ul>
+            <li id="about-menu-item" class="">
+              <a id="about-link" class="" href="../About.html">ABOUT</a>
+            </li>
+            <li id="csr-menu-item" class="">
+              <a id="csr-link" class="" href="../CSR/Csr.html"
+                >CORPORATE SOCIAL RESPONSIBILITY</a
+              >
+            </li>
+            <li id="investor-menu-item" class="">
+              <a id="investor-link" class="" href="../CSR/Csr.html"
+                >INVESTOR</a
+              >
+            </li>
+            <li id="newsroom-menu-item" class="">
+              <a id="newsroom-link" class="" href="javascript:void(0)"
+                >NEWSROOM</a
+              >
+            </li>
+            <li id="career-menu-item" class="">
+              <a id="career-link" class="" href="/career">CAREER</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search-icon">
+          <img src="../../Assets/Images/Search.png" alt="" />
+        </div>
+        <button class="button">
+          Thermofisher.com
+          <img
+            class="link-img"
+            src="../../Assets/Images/external-link.png"
+            alt=""
+          />
+        </button>
       </div>
     </div>
-    <div style="width: 60%;">
-    <div class="dropdown-mid">
-      <div class="main-dropdown">
-        <div class="dropdown-header">
-          <img src="../../Assets/Images/Icon1.png" alt="" />
-          <p class="heder-drop">Corporate Governance</p>
-          
+    <div id="dropdown" class="dropdown">
+      <div class="dropdown-left">
+        <div class="dropdown-left-img">
+          <img
+            src="../../Assets/Images/ss.svg"
+            alt=""
+            style="max-width: 100%"
+          />
         </div>
-        <div class="submenu animated">
-          <p style="cursor: pointer;">Corporate Page 1</p>
+        <div class="dropdown-left-top">
+          <img src="../../Assets/Images/dropa.svg" alt="" />
+          <p class="dropdown-top-text">Our Mission</p>
+        </div>
+        <p class="dropdown-left-mid">
+          Everything we do starts with our Mission: to <br />
+          enable our customers to make the world <br />
+          <span>healthier, cleaner, and safer.</span>
+        </p>
+        <div class="dropdown-left-bottom">
+          <img src="../../Assets/Images/dropd.svg" alt="" />
+          <p class="bottom-text">Read More</p>
         </div>
       </div>
-      <div class="main-dropdown">
-        <div class="dropdown-header">
-          <img src="../../Assets/Images/Icon1.png" alt="" />
-          <p class="heder-drop">Ethics & Compliance</p>
-          
+      <div style="width: 60%">
+        <div class="dropdown-mid">
+          <div class="main-dropdown">
+            <div class="dropdown-header">
+              <img src="../../Assets/Images/Icon1.png" alt="" />
+              <p class="heder-drop">Corporate Governance</p>
+            </div>
+            <div class="submenu animated">
+              <p style="cursor: pointer">Corporate Page 1</p>
+            </div>
+          </div>
+          <div class="main-dropdown">
+            <div class="dropdown-header">
+              <img src="../../Assets/Images/Icon1.png" alt="" />
+              <p class="heder-drop">Ethics & Compliance</p>
+            </div>
+          </div>
+          <div class="main-dropdown">
+            <div
+              class="dropdown-header"
+            >
+              <img src="../../Assets/Images/Icon1.png" alt="" />
+              <p class="heder-drop">Reporting</p>
+            </div>
+          </div>
+          <div class="main-dropdown">
+            <div class="dropdown-header">
+              <img src="../../Assets/Images/Icon1.png" alt="" />
+              <p class="heder-drop">Operations</p>
+            </div>
+          </div>
+          <div class="main-dropdown">
+            <div class="dropdown-header">
+              <img src="../../Assets/Images/Icon1.png" alt="" />
+              <p class="heder-drop">Colleagues</p>
+            </div>
+          </div>
+          <div class="main-dropdown">
+            <div
+              class="dropdown-header"
+            >
+              <img
+                src="../../Assets/Images/Icon1.png"
+                alt=""
+              />
+              <p class="heder-drop">Communities</p>
+            </div>
+          </div>
+          <div class="main-dropdown">
+            <div class="dropdown-header">
+              <img src="../../Assets/Images/Icon1.png" alt="" />
+              <p class="heder-drop">Enviroment</p>
+            </div>
+          </div>
         </div>
-        
       </div>
-      <div class="main-dropdown">
-        <div style="margin-bottom:17px !important;"class="dropdown-header">
-          <img src="../../Assets/Images/Icon1.png" alt="" />
-          <p class="heder-drop">Reporting</p>
-        </div>
-        
-      </div>
-      <div class="main-dropdown">
-        <div class="dropdown-header">
-          <img src="../../Assets/Images/Icon1.png" alt="" />
-          <p class="heder-drop">Operations   </p>
-          
-        </div>
-        
-      </div>
-      <div class="main-dropdown">
-        <div class="dropdown-header">
-          <img  src="../../Assets/Images/Icon1.png" alt="" />
-          <p class="heder-drop">Colleagues   </p>
-          
-        </div>
-        
-      </div>
-      <div class="main-dropdown">
-        <div style="margin-bottom:17px !important;"class="dropdown-header">
-          <img style="margin-left:69px," src="../../Assets/Images/Icon1.png" alt="" />
-          <p class="heder-drop">Communities  </p>
-          
-        </div>
-        
-      </div>
-      <div class="main-dropdown">
-        <div class="dropdown-header">
-          <img  src="../../Assets/Images/Icon1.png" alt="" />
-          <p class="heder-drop">Enviroment</p>
-          
-        </div>
-        
+      <div class="dropdown-right">
+        <img src="../../Assets/Images/Vector (4).svg" alt="" />
       </div>
     </div>
-    </div>
-    <div class="dropdown-right">
-      <img src="../../Assets/Images/Vector (4).svg" alt="" />
-    </div>
-  </div>
   </div>
   <div class="csrr">
     <p class="csrr-title">Corporate Social Responsibility</p>
