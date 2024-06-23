@@ -5,84 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./newsroom.css" />
-    <style>
-      .menubar {
-        display: inline-block;
-        cursor: pointer;
-      }
-      #myLinks {
+    <style> 
+      .menubar{
+      display: inline-block;
+      cursor: pointer;
+    }
+    #myLinks{
         top: 20px;
         left: 0px;
         width: 100%;
         background: #fff;
-      }
-
-      .bar1,
-      .bar2,
-      .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
-      }
-
-      .change .bar1 {
-        transform: translate(0, 11px) rotate(-45deg);
-      }
-
-      .change .bar2 {
-        opacity: 0;
-      }
-
-      .change .bar3 {
-        transform: translate(0, -11px) rotate(45deg);
-      }
-
-      .topnav {
-        overflow: hidden;
-        background-color: #fff;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        padding: 10px 20px;
-        z-index: 12;
-        /* display: flex; */
-        align-items: center;
-      }
-
-      .topnav #myLinks {
-        display: none;
-      }
-      .topnav ul {
-        padding-left: 0;
-      }
-      .topnav li {
-        color: #000;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-      }
-      .topnav li.active {
-        background-color: #fff;
-      }
-      .topnav a.icon {
-        background: #fff;
-        display: block;
-        position: absolute;
-        right: 70px;
-        top: 10px;
-      }
-
-      .dropdown-container {
-        display: none;
-        color: #000;
-      }
-      .dropdown-left {
-        width: 40%;
-      }
-    </style>
+    }
+    
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    
+    .change .bar1 {
+      transform: translate(0, 11px) rotate(-45deg);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+      transform: translate(0, -11px) rotate(45deg);
+    } 
+        
+        .topnav {
+          overflow: hidden;
+          background-color: #fff;
+          position: fixed;
+          width: 100%;
+          top: 0;
+          padding: 10px 20px;
+          z-index: 12;
+          align-items: center;
+        }
+        #myLinks>li {
+        border-bottom: 3px solid #9f9f9f;
+    }
+    
+    
+        .topnav #myLinks {
+          display: none;
+        }
+        .topnav ul{
+          padding-left: 0;
+        }
+        .topnav li {
+          color: #000;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+          display: block;
+        }
+        .topnav li.active{
+          background-color: #fff;
+        }
+        .topnav a.icon {
+          background: #fff;
+          display: block;
+          position: absolute;
+          right: 20px;
+          top: 10px;
+        }
+        
+        .dropdown-container {
+          display: none;
+          color: #000;
+        }
+        .dropdown-left{
+          width: 40%;
+        }
+        </style>
   </head>
   <body style="overflow-x: hidden">
     <div class="mobile-container">
@@ -97,16 +96,20 @@
             /></div
         ></a>
         <ul id="myLinks">
-          <li class="dropdown-btn" href="#news">About</li>
+          <li class="dropdown-btn mob-dropdown" href="#news">
+            <img src="../../Assets/Images/Icon1.png" alt="" /> <span>About</span>
+          </li>
           <ul class="dropdown-container">
             <li href="#">Link 1</li>
             <li href="#">Link 2</li>
             <li href="#">Link 3</li>
           </ul>
-          <li href="#contact">Corporate Social Responsibility</li>
-          <li href="#about">Investors</li>
-          <li>Newsroom</li>
-          <li>Careers</li>
+          <li class="mob-dropdown" href="#contact">
+            <img src="../../Assets/Images/Icon1.png" alt="" /> <span> Corporate Social Responsibility</span>
+          </li>
+          <li class="mob-dropdown" href="#about"> <img src="../../Assets/Images/Icon1.png" alt="" /> <span>Investors</span> </li>
+          <li class="mob-dropdown"><img src="../../Assets/Images/Icon1.png" alt="" /> <span>Newsroom</span> </li>
+          <li class="mob-dropdown"><img src="../../Assets/Images/Icon1.png" alt="" /> <span>Careers</span> </li>
         </ul>
         <a href="javascript:void(0);" class="icon" onclick="myFunction(this)">
           <div class="menubar">
@@ -131,6 +134,7 @@
     </script>
     <div class="desk-nav">
       <div class="navbar">
+        
         <a href="/Pages/HomePage/Home.html">
           <div class="navlogo">
             <img id="logo" src="../../Assets/Images/logo.png" alt="" />
@@ -754,13 +758,15 @@
       <p>Follow us on</p>
       <div class="iconss">
         <a
+        style="text-decoration: none; color: inherit;"
           href="https://www.linkedin.com/company/thermo-fisher-scientific/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="../../Assets/Images/11.png" alt="LinkedIn" />
+        <img src="../../Assets/Images/11.png" alt="LinkedIn" />
         </a>
         <a
+        style="text-decoration: none; color: inherit;"
           href="https://youtube.com/thermofisher"
           target="_blank"
           rel="noopener noreferrer"
@@ -768,6 +774,7 @@
           <img src="../../Assets/Images/13.png" alt="YouTube" />
         </a>
         <a
+        style="text-decoration: none; color: inherit;"
           href="https://www.instagram.com/thermofisherscientific/"
           target="_blank"
           rel="noopener noreferrer"
@@ -775,6 +782,7 @@
           <img src="../../Assets/Images/15.png" alt="Instagram" />
         </a>
         <a
+        style="text-decoration: none; color: inherit;"
           href="https://twitter.com/thermofisher"
           target="_blank"
           rel="noopener noreferrer"
@@ -782,6 +790,7 @@
           <img src="../../Assets/Images/12.png" alt="Twitter" />
         </a>
         <a
+        style="text-decoration: none; color: inherit;"
           href="https://www.facebook.com/thermofisher/"
           target="_blank"
           rel="noopener noreferrer"
